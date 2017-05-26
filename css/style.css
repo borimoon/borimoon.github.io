@@ -93,7 +93,6 @@ strong {
 .clients,
 .team-members,
 .contact,
-.social,
 .footer-info {
 	margin: 0 15px;
 }
@@ -101,33 +100,31 @@ strong {
 /* HEADER */
 
 .header {
-	background: url("../assets/bg.jpg") no-repeat;
-	background-size: cover;
+	/*background: url("../assets/bg.jpg") no-repeat;
+	background-size: cover;*/
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	height: 100vh;
 	position: relative;
-}
-
-.welcome {
-	background: url("../assets/bg.svg") no-repeat;
-	background-size: cover;
-	height: 91%;
 }
 
 /*navigation*/
 
 .navigation-bar {
 	background-color: #f7f7f7;
-	border-bottom: 2px solid #fff;
-	height: 9%;
+	height: 45px;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	-webkit-transition: top 0.2s ease-in-out;
+	-moz-transition: top 0.2s ease-in-out;
+	-o-transition: top 0.2s ease-in-out;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
 	z-index: 9999;
 }
 
-.fix {
-	position: fixed;
-	top: 0;
-	width: 100%;
+.scroll-up {
+	top: -45px;
 }
 
 .navigation {
@@ -144,7 +141,7 @@ strong {
 
 .logo {
 	height: 100%;
-	max-width: 180px;
+	max-width: 160px;
 }
 
 .toggle-on span::after {
@@ -166,10 +163,16 @@ strong {
 }
 
 .menuitem {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	letter-spacing: .05em;
 	line-height: 1.4;
 	text-transform: uppercase;
+}
+
+.welcome {
+	/*background: url("../assets/bg.svg") no-repeat;
+	background-size: cover;*/
+	height: 100vh;
 }
 
 /*INTRO*/
@@ -177,6 +180,7 @@ strong {
 .intro {
 	background-color: #4a4a4a;
 	color: #f7f7f7;
+	position: relative;
 }
 
 .quote {
@@ -268,8 +272,14 @@ strong {
 .carousel {
 	flex-direction: column;
 	-webkit-transform: translate3d(0px,0px,0px);
-  transform: translate3d(0px,0px,0px);
-  transition: all 0.66s ease; -webkit-transition: all 0.66s ease;
+	-moz-transform: translate3d(0px,0px,0px);
+	-ms-transform: translate3d(0px,0px,0px);
+	-o-transform: translate3d(0px,0px,0px);
+	transform: translate3d(0px,0px,0px);
+	-webkit-transition: all 0.66s ease;
+	-moz-transition: all 0.66s ease;
+	-o-transition: all 0.66s ease;
+	transition: all 0.66s ease;
 }
 
 .slide::after {
@@ -470,12 +480,6 @@ strong {
 	flex: 1 2;
 }
 
-.social-bar {
-	background-color: #fff;
-	display: none;
-	padding: 10px 0;
-}
-
 .social {
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
@@ -518,7 +522,7 @@ strong {
 
 @media (min-width: 750px) {
 
-	/* menu > 600 */
+	/* menu > 750 */
 
 	.toggle-on {
 		display: none;
@@ -535,7 +539,7 @@ strong {
 		width: 200px;
 	}
 
-	/*INTRO > 600*/
+	/*INTRO > 750*/
 
 	.quote,
 	.act {
@@ -546,8 +550,8 @@ strong {
 		margin: 0 auto 10px;
 	}
 
-	/*WORK > 600*/
-	/*slider > 600*/
+	/*WORK > 750*/
+	/*slider > 750*/
 
 	.prev,
 	.next {
@@ -580,7 +584,7 @@ strong {
 		margin: 0 auto 10px;
 	}
 
-	/*REFS > 600*/
+	/*REFS > 750*/
 
 	.clients img {
 		height: 60px;
@@ -588,7 +592,7 @@ strong {
 		width: 150px;
 	}
 
-	/*TEAM > 600*/
+	/*TEAM > 750*/
 
 	.member-quote {
 		font-size: 2.2em;
@@ -602,7 +606,7 @@ strong {
 		width: 180px;
 	}
 
-	/*INFO*/
+	/*INFO > 750*/
 
 	.info-head,
 	.info-text,
@@ -619,11 +623,17 @@ strong {
 	}
 
 	.map {
+		height: 255px;
 		margin: 0 auto 25px;
+		width: 360px;
 	}
 
 	.map iframe {
 		height: 100%;
+	}
+
+	.social {
+		margin: 0 auto;
 	}
 }
 
@@ -802,7 +812,7 @@ strong {
 		margin-left: 20px;
 		margin-right: 20px;
 		max-width: 300px;
-		width: 300;
+		width: 300px;
 	}
 }
 

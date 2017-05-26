@@ -1,14 +1,36 @@
-// sticky header
-var vpHeight = $(window).height();
-var theHeight = (91 * vpHeight) / 100;
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#navbar').outerHeight();
 
-$(window).scroll(function () {
-	if ( $(window).scrollTop() > $('#navbar').offset().top){
-		$('#navbar').addClass('fix');
-	} else if ( $(window).scrollTop() < theHeight){
-		$('#navbar').removeClass('fix');
-	}
+$(window).scroll(function(event){
+	didScroll = true;
 });
+
+setInterval(function() {
+	if (didScroll) {
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
+
+function hasScrolled() {
+	var sTop = $(this).scrollTop();
+
+	if(Math.abs(lastScrollTop - sTop) <= delta)
+	return;
+
+	if (sTop > lastScrollTop && sTop > navbarHeight){
+		$('#navbar').removeClass('scroll-down').addClass('scroll-up');
+	} else {
+			if (sTop + $(window).height() < $(document).height()) {
+					$('#navbar').removeClass('scroll-up').addClass('scroll-down');
+			}
+	}
+
+	lastScrollTop = sTop;
+}
 
 // mobile menu show-hide
 $(function() {
