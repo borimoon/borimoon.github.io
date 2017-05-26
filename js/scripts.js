@@ -1,14 +1,14 @@
 // sticky header
-// var vpHeight = $(window).height();
-// var theHeight = (91 * vpHeight) / 100;
-//
-// $(window).scroll(function () {
-// 	if ( $(window).scrollTop() > $('#navbar').offset().top){
-// 		$('#navbar').addClass('fix');
-// 	} else if ( $(window).scrollTop() < theHeight){
-// 		$('#navbar').removeClass('fix');
-// 	}
-// });
+var vpHeight = $(window).height();
+var theHeight = (91 * vpHeight) / 100;
+
+$(window).scroll(function () {
+	if ( $(window).scrollTop() > $('#navbar').offset().top){
+		$('#navbar').addClass('fix');
+	} else if ( $(window).scrollTop() < theHeight){
+		$('#navbar').removeClass('fix');
+	}
+});
 
 // mobile menu show-hide
 $(function() {

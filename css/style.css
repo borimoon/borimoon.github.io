@@ -150,7 +150,7 @@ strong {
 .toggle-on span::after {
 	background-color: grey;
 	content: ' ';
-	display: none;
+	display: block;
 	height: 25px;
 	width: 25px;
 }
@@ -344,15 +344,15 @@ strong {
 .clients {
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
 }
 
-/*.clients::after {
+.clients::after {
 	content: " ";
 	-webkit-flex: 1;
 	flex: auto;
-}*/
+}
 
 .clients img {
 	height: 40px;
@@ -381,6 +381,28 @@ strong {
 .member {
 	display: block;
 	margin-bottom: 25px;
+	position: relative;
+}
+
+.member::before {
+	background-color: #4a4a4a;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #fff;
+	content:'#nincsen #semmi #baj';
+	display: -webkit-flex;
+	display: flex;
+	font-size: 1.4em;
+	height: 50px;
+	-webkit-justify-content: center;
+	justify-content: center;
+	left: 50%;
+	margin-left: -60px;
+	position: absolute;
+	text-align: center;
+	top: 120px;
+	transition: opacity .2s linear;
+	width: 120px;
 }
 
 .member img {
@@ -522,8 +544,8 @@ strong {
 
 	.menu {
 		background-color: transparent;
-		/*display: -webkit-flex !important;
-		display: flex !important;*/
+		display: -webkit-flex !important;
+		display: flex !important;
 		height: auto;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
@@ -585,6 +607,20 @@ strong {
 	}
 
 	/*TEAM > 600*/
+
+	.member::before {
+		font-size: 2.2em;
+		height: 70px;
+		-webkit-justify-content: center;
+		justify-content: center;
+		left: 50%;
+		margin-left: -110px;
+		position: absolute;
+		text-align: center;
+		top: 241px;
+		transition: opacity .2s linear;
+		width: 220px;
+	}
 
 	.member img {
 		height: 311px;
@@ -762,6 +798,15 @@ strong {
 		padding-top: 25px;
 	}
 
+	.clients {
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+
+	.clients::after {
+		content: none;
+	}
+
 	.clients img {
 		margin: 20px;
 	}
@@ -779,6 +824,24 @@ strong {
 
 	.member {
 		margin-bottom: 40px;
+	}
+
+	.member::before {
+		font-size: 2.7em;
+		height: 311px;
+		left: 0;
+		margin-left: 0;
+		opacity: 0;
+		top: 0;
+		-webkit-transition: opacity .2s linear;
+		-moz-transition: opacity .2s linear;
+		-o-transition: opacity .2s linear;
+		transition: opacity .2s linear;
+		width: 100%;
+	}
+
+	.member:hover.member::before {
+		opacity: .5;
 	}
 
 	/*INFO > 980 */
