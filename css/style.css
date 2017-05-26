@@ -100,8 +100,8 @@ strong {
 /* HEADER */
 
 .header {
-	/*background: url("../assets/bg.jpg") no-repeat;
-	background-size: cover;*/
+	background: url("../assets/bg.jpg") no-repeat;
+	background-size: cover;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	position: relative;
@@ -112,7 +112,7 @@ strong {
 .navigation-bar {
 	background-color: #f7f7f7;
 	height: 45px;
-	opacity: .7;
+	opacity: .9;
 	position: fixed;
 	top: 0;
 	-webkit-transition: top 0.2s ease-in-out;
@@ -170,8 +170,8 @@ strong {
 }
 
 .welcome {
-	/*background: url("../assets/bg.svg") no-repeat;
-	background-size: cover;*/
+	background: url("../assets/bg.svg") no-repeat;
+	background-size: cover;
 	height: 100vh;
 }
 
