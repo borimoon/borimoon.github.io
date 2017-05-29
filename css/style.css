@@ -111,7 +111,7 @@ strong {
 
 .header::after {
 	background: url("../assets/arrow.svg");
-	bottom: 10%;
+	bottom: 15%;
 	content: ' ';
 	display: block;
 	height: 152px;
@@ -384,6 +384,7 @@ strong {
 
 .member {
 	display: block;
+	max-width: 240px;
 	margin-bottom: 25px;
 }
 
@@ -604,6 +605,10 @@ strong {
 
 	/*TEAM > 750*/
 
+	.member {
+		max-width: 360px;
+	}
+
 	.member-quote {
 		font-size: 2.2em;
 		height: 50px;
@@ -736,6 +741,8 @@ strong {
 	/*TEAM > 980*/
 
 	.team-members {
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 		-webkit-justify-content: space-between;
@@ -745,6 +752,7 @@ strong {
 
 	.member {
 		margin-bottom: 40px;
+		max-width: 220px;
 	}
 
 	.image {
