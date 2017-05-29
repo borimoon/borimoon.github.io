@@ -1,4 +1,4 @@
-// Hide Header on on scroll down
+// Hide Header on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -51,7 +51,6 @@ $(function() {
 });
 
 // slider
-
 $.global = new Object();
 
 $.global.item = 1;
@@ -81,7 +80,6 @@ function Slide(direction)
     if ($target == -1) { DoIt($.global.total-1); }
     else if ($target == $.global.total) { DoIt(0); }
     else { DoIt($target); }
-
 
 	}
 
