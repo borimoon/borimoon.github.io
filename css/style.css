@@ -214,7 +214,6 @@ strong {
 
 .act::before,
 .work-head::before,
-.refs::after,
 .member-head::before,
 .address::after {
 	content:' ';
@@ -240,8 +239,7 @@ strong {
 	text-align: center;
 }
 
-.section-title-bar::after,
-.refs::after {
+.section-title-bar::after {
 	content:' ';
 	display: block;
 	height: 7px;
@@ -252,7 +250,6 @@ strong {
 /*WORK*/
 
 .recent-work {
-	background-color: #f7f7f7;
 	position: relative;
 }
 
@@ -337,32 +334,22 @@ strong {
 /*REFS*/
 
 .refs {
-	background-color: #fff;
+	background-color: #f7f7f7;
 	padding-bottom: 15px;
 	padding-top: 15px;
-}
-
-.refs::after {
-	background-color: #0cb0ac;
 }
 
 .clients {
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
-}
-
-.clients::after {
-	content: ' ';
-	-webkit-flex: 1;
-	flex: auto;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 
 .clients img {
-	height: 40px;
-	margin: 7px;
-	width: 100px;
+	height: 48px;
+	margin: 10px 12px;
+	width: 120px;
 }
 
 /*TEAM*/
@@ -574,8 +561,7 @@ strong {
 	}
 
 	.slide::after {
-		margin: 0 auto;
-		width: 7px;
+		display: none;
 	}
 
 	.work-img-mobile {
@@ -599,7 +585,7 @@ strong {
 
 	.clients img {
 		height: 60px;
-		margin: 10px;
+		margin: 15px 20px;
 		width: 150px;
 	}
 
@@ -724,19 +710,10 @@ strong {
 		padding-top: 25px;
 	}
 
-	.clients {
-		-webkit-justify-content: center;
-		justify-content: center;
-	}
-
-	.clients::after {
-		content: none;
-	}
-
 	.clients img {
-		margin: 20px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
-
 
 	/*TEAM > 980*/
 
