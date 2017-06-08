@@ -114,11 +114,11 @@ strong {
 	bottom: 15%;
 	content: ' ';
 	display: block;
-	height: 152px;
+	height: 101px;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -40px;
 	position: absolute;
-	width: 120px;
+	width: 80px;
 }
 
 /*navigation*/
