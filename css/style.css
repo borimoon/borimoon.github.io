@@ -497,6 +497,11 @@ strong {
 	background: url("../assets/twitter.svg");
 }*/
 
+.tel a {
+	display: block;
+	margin-top: 9px;
+}
+
 /*FOOTER*/
 
 .footer {
