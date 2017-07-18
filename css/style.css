@@ -18,9 +18,28 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+	font-family: 'ffad_matroregular';
+	font-size: 4.2em;
+}
+
 p {
 	font-size: 1.7em;
 	line-height: 1.3;
+}
+
+a {
+	color: #f17;
+}
+
+.content a,
+.events-content a,
+.about-content a {
+	font-size: 1.7em;
+}
+
+.small {
+	font-size: 70%;
 }
 
 .bg-container {
@@ -84,7 +103,7 @@ p {
 }
 
 .toggle {
-	background-color: #f17;
+	background-color: #20ed28;
 	height: 42px;
 	position: fixed;
 	right: 20px;
@@ -112,36 +131,24 @@ p {
 	display: block;
 	height: 4px;
 	position: absolute;
-	-webkit-transition-delay: 0.2s, 0s;
-	-moz-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-	-webkit-transition-duration: 0.2s, 0.2s;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-o-transition-duration: 0.2s, 0.2s;
-	transition-duration: 0.2s, 0.2s;
 	width: 100%;
 }
 
 .toggle span::before {
 	top: -12px;
-	-webkit-transition-property: top, transform;
-	-moz-transition-property: top, transform;
-	-o-transition-property: top, transform;
-	transition-property: top, transform;
 }
 
 .toggle span::after {
 	bottom: -12px;
-	-webkit-transition-property: bottom, transform;
-	-moz-transition-property: bottom, transform;
-	-o-transition-property: bottom, transform;
-	transition-property: bottom, transform;
 }
 
 .menuopen,
 .menuopen span {
 	background: none;
+}
+
+a.menuopen {
+	background-color: #20ed28;
 }
 
 .menuopen span::before {
@@ -238,13 +245,62 @@ p {
 	margin-bottom: 25px;
 }
 
-.close {
+.close,
+.close-event {
 	display: none;
 }
 
 .imagefilm {
 	height: 100%;
 	width: 100%;
+}
+
+/*events*/
+
+.events-header {
+	margin: 15px 15px 0 15px;
+}
+
+.event-img {
+	margin-bottom: 22px;
+	width: 100%;
+}
+
+.events-content {
+	position: relative;
+}
+
+.back,
+.next {
+	display: block;
+	position: absolute;
+	z-index: 999999;
+}
+
+.back {
+	left: 0;
+	top: 0;
+}
+
+.next {
+	right: 0;
+	top: 0;
+}
+
+
+.back img,
+.next img {
+	height: 42px;
+	width: 42px;
+}
+
+.event-head {
+	color: #f17;
+	text-align: center;
+}
+
+.event-head span {
+	color: #517;
 }
 
 @media (max-width: 599px) and (orientation:landscape) {
@@ -278,12 +334,24 @@ p {
 	.bg-container {
 		background: #f17 url('../assets/bg-m2.png') no-repeat center 25%;
 	}
+
+	.event-head {
+		font-size: 8.7em;
+	}
+
+	.back img,
+	.next img {
+		height: 100px;
+		width: 100px;
+	}
 }
 
 @media (min-width: 900px) {
+
 	.bg-container {
 		background: #f17 url('../assets/bg.png') no-repeat center 25%;
 		margin-bottom: 0;
+		overflow-y: hidden;
 	}
 
 	.cat {
@@ -485,6 +553,22 @@ p {
 	.about p {
 		margin: 20px;
 	}
+
+	/*events*/
+
+	.close-event {
+		display: block;
+		height: 80px;
+		position: fixed;
+		right: 42px;
+		top: 42px;
+		width: 80px;
+		z-index: 999999;
+	}
+
+	.event-img {
+		margin-bottom: 60px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -494,7 +578,9 @@ p {
 	}
 
 	.landing,
-	.content {
+	.content,
+	.events-header,
+	.events-content {
 		margin: 0 auto;
 		width: 940px;
 	}
@@ -510,6 +596,12 @@ p {
 	.close {
 		right: 300px;
 	}
+
+	/*events*/
+
+	.event-img {
+		margin-top: 42px;
+	}
 }
 
 @media (min-width: 1400px) {
@@ -523,7 +615,9 @@ p {
 	}
 
 	.landing,
-	.content {
+	.content,
+	.events-header,
+	.events-content {
 		width: 1100px;
 	}
 
@@ -532,6 +626,13 @@ p {
 		left: 60px;
 		width: 64%;
 	}
+
+	.close {
+		right: 350px;
+	}
+
+	/*events*/
+
 }
 
 @media (min-width: 1800px) {
@@ -544,13 +645,20 @@ p {
 		right: 42%;
 	}
 
+	.landing,
+	.content,
+	.events-header,
+	.events-content {
+		width: 1400px;
+	}
+
 	.section {
 		height: 65%;
-		left: 70px;
-		width: 61%;
+		left: 120px;
+		width: 65%;
 	}
 
 	.close {
-		right: 500px;
+		right: 400px;
 	}
 }

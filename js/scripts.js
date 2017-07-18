@@ -16,7 +16,7 @@ $(function() {
 	});
 });
 
-// menu open
+// mobile-menu open-close
 $(document).ready(function(){
 	$('#toggle').click(function(){
 		$(this).toggleClass('menuopen');
