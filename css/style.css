@@ -61,6 +61,14 @@ em {
 	font-size: 70%;
 }
 
+.lighter {
+	font-weight: 300;
+}
+
+.block {
+	display: block;
+}
+
 .bg-container {
 	background: #f17 url('../assets/bg-m.png') no-repeat center 25%;
 	height: 100vh;
@@ -91,7 +99,7 @@ em {
 .events,
 .pictures,
 .events-content {
-	margin: 0 15px;
+	margin: 0 15px 20px;
 }
 
 .header {
@@ -164,7 +172,7 @@ em {
 	display: none;
 	height: 100vh;
 	opacity: .9;
-	padding-top: 80px;
+	padding-top: 20px;
 	position: fixed;
 	top: 0;
 	width: 100vw;
@@ -182,7 +190,7 @@ em {
 }
 
 .item-about {
-	font-size: 5.5em;
+	font-size: 4.2em;
 	position: relative;
 	text-align: center;
 	-webkit-transform: rotate(-5deg);
@@ -193,13 +201,13 @@ em {
 }
 
 .item-description {
-	font-size: 3.7em;
+	font-size: 2.5em;
 	position: relative;
 	text-align: center;
 }
 
 .item-video {
-	font-size: 5em;
+	font-size: 3.3em;
 	text-align: center;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
@@ -209,13 +217,13 @@ em {
 }
 
 .item-events {
-	font-size: 3.7em;
+	font-size: 2.5em;
 	position: relative;
 	text-align: center;
 }
 
 .item-pictures {
-	font-size: 4.2em;
+	font-size: 3.7em;
 	position: relative;
 	text-align: center;
 	-webkit-transform: rotate(-8deg);
@@ -225,9 +233,24 @@ em {
 	transform: rotate(-8deg);
 }
 
+.social-fb {
+	margin-left: 50%;
+	margin-top: 20px;
+}
+
+.facebook {
+	background: url('../assets/fb.svg') no-repeat;
+	display: block;
+	height: 42px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 42px;
+}
+
 .section {
 	background-color: #fff;
-	margin-bottom: 25px;
+	margin-bottom: 37px;
 }
 
 .close {
@@ -321,33 +344,6 @@ em {
 	margin-bottom: 17px;
 }
 
-@media (max-width: 599px) and (orientation:landscape) {
-
-	.menu {
-		padding-top: 72px;
-	}
-
-	.item-about {
-		font-size: 4.2em;
-	}
-
-	.item-description {
-		font-size: 2.5em;
-	}
-
-	.item-video {
-		font-size: 3.3em;
-	}
-
-	.item-events {
-		font-size: 2.5em;
-	}
-
-	.item-pictures {
-		font-size: 3.7em;
-	}
-}
-
 @media (min-width: 600px) {
 	.bg-container {
 		background: #f17 url('../assets/bg-m2.png') no-repeat center 25%;
@@ -392,10 +388,6 @@ em {
 		overflow-y: hidden;
 	}
 
-	.cat {
-		right: 35%;
-	}
-
 	.header {
 		-webkit-align-items: center;
 		align-items: center;
@@ -404,6 +396,26 @@ em {
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
 		margin: 0 42px;
+	}
+
+	.item-about {
+		font-size: 5.5em;
+	}
+
+	.item-description {
+		font-size: 3.7em;
+	}
+
+	.item-video {
+		font-size: 5em;
+	}
+
+	.item-events {
+		font-size: 3.7em;
+	}
+
+	.item-pictures {
+		font-size: 4.2em;
 	}
 
 	.about,
@@ -432,6 +444,12 @@ em {
 		right: 42px;
 		position: absolute;
 		top: 320px;
+	}
+
+	.social {
+		right: 70px;
+		position: absolute;
+		bottom: -97px;
 	}
 
 	.toggle {
@@ -547,6 +565,11 @@ em {
 		display: block;
 	}
 
+	.social-fb {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
 	.section {
 		border-radius: 2px;
 		height: 360px;
@@ -627,10 +650,6 @@ em {
 
 @media (min-width: 1200px) {
 
-	.unicorn {
-		left: 10%;
-	}
-
 	.landing,
 	.content,
 	.events-header,
@@ -656,26 +675,8 @@ em {
 	.event-img {
 		margin-top: 42px;
 	}
-}
 
-@media (min-width: 1400px) {
-
-	.unicorn {
-		left: 15%;
-	}
-
-	.cat {
-		right: 40%;
-	}
-}
-
-@media (min-width: 1800px) {
-
-	.unicorn {
-		left: 22%;
-	}
-
-	.cat {
-		right: 42%;
+	.events-content {
+		margin-bottom: 42px;
 	}
 }
