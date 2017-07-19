@@ -53,6 +53,10 @@ a {
 	color: #f17;
 }
 
+em {
+	font-weight: 800;
+}
+
 .small {
 	font-size: 70%;
 }
@@ -549,6 +553,7 @@ a {
 		left: 42px;
 		margin-bottom: 0;
 		opacity: .9;
+		overflow-x: hidden;
 		overflow-y: auto;
 		position: absolute;
 		top: -450px;
@@ -560,8 +565,8 @@ a {
 		display: inline-block;
 		height: 65px;
 		position: absolute;
-		left: 570px;
-		top: 5px;
+		left: 557px;
+		top: 15px;
 		width: 65px;
 		z-index: 999999;
 	}
@@ -595,9 +600,17 @@ a {
 		display: none;
 	}
 
-	.popup-paragraph {
+	.popup-heading {
 		margin: 20px 0 20px 20px;
-		width: 542px;
+	}
+
+	.popup-paragraph {
+		margin-left: 20px;
+		width: 535px;
+	}
+
+	.text:last-child {
+		margin-bottom: 0;
 	}
 
 	/*events*/
