@@ -27,6 +27,11 @@ $(document).ready(function(){
 	});
 });
 
+// $("#menuitemb").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#04").offset().top
+//     }, 2000);
+// });
 
 // stop youtube video
 $(function(){
