@@ -1,179 +1,422 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 	<head>
+
 		<meta charset="utf-8">
-		<title>Adri &amp Dani 1bekel</title>
+		<title>Winkler&amp;Stenzel kreatívügynökség</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- css -->
+		<!-- CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 		<link rel="stylesheet" href="css/style.css">
 
-		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800&amp;subset=latin-ext" rel="stylesheet">
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400|Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+
 
 		<meta name="author" content="bori">
-		<meta name="description" content="Bekelőparty tour 2017">
+		<meta name="description" content="info and portfolio site for agency Winkler&amp;Stenzel Hungary">
 
-		<meta property="og:image" content="assets/facebook.jpg">
-		<meta property="og:description" content="Bekelőparty tour 2017">
-		<meta property="og:title" content="Adri & Dani 1bekel">
+		<meta property="og:image" content="img/winkler-fb.jpg">
+		<meta property="og:description" content="info and portfolio site for agency Winkler&amp;Stenzel Hungary">
+		<meta property="og:title" content="Winkler&amp;Stenzel kreatívügynökség">
 
-		<meta name="twitter:title" content="Adri & Dani 1bekel">
+		<meta name="twitter:title" content="Winkler&amp;Stenzel kreatívügynökség">
 
 		<!-- icons -->
 
-		<link rel="icon" type="image/png" href="assets/landing-fav-16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="assets/landing-fav-32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="assets/landing-fav-96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="assets/favicon-16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="assets/favicon-96.png" sizes="96x96">
 
-		<!-- scripts -->
+		<link rel="apple-touch-icon" href="assets/apple-touch-icon-120.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-167.png">
+
+		<!-- JS -->
 
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 		</script>
 
-		<script src="js/scripts.js"></script>
+		<script src="js/translate.js"></script>
 
+		<script src="js/scripts.js"></script>
 	</head>
 
 	<body>
-		<div class="bg-container">
-			<div class="pet unicorn">
-				<img src="assets/unicorn.svg" alt="unikornis" width="103" height="132"/>
-			</div>
-
-			<div class="pet cat">
-				<img src="assets/cica.png" alt="macska" width="225" height="203"/>
-			</div>
-
-			<section id="00" class="landing">
-				<header class="header">
-					<object class="logo" type="image/svg+xml" data="assets/logo.svg"
-						width="100%" height="100%">
-					</object>
-
-					<h2 class="desc">bekelő party tour ’17
-					</h2>
-				</header>
-
+		<header class="header">
+			<div id="navbar" class="navigation-bar scroll-down">
 				<nav class="navigation">
+					<a href="index.html">
+						<img src="assets/wslogo.svg" class="logo" width="160" height="25" alt="Winkler&ampStenzel"/>
+					</a>
 
-					<div id="toggle" class="toggle"><span></span></div>
+					<div id="toggleOn" class="toggle-on"><p class="small strong red lang" key="toggle-menu">menü</p></div>
 
 					<ul id="menu" class="menu">
-						<li id="menuitem" class="item-about stop"><a class="menuitem" href="#01" alt="mi ez?">mi ez?</a></li>
-						<li id="menuitem" class="item-description stop"><a class="menuitem" href="#02" alt="bekel.">bekel.</a></li>
-						<li id="menuitem" class="item-video"><a class="menuitem" href="#03" alt="videó">videó</a></li>
-						<li id="menuitem" class="item-events stop"><a class="menuitem" href="#04" alt="események">események</a></li>
-						<li id="menuitem" class="item-pictures stop"><a class="menuitem" href="#05" alt="képek">képek</a></li>
+						<ul class="main-menu">
+							<li><a href="#" class="menuitem lang" key="menuitem-1">rólunk</a></li>
+							<li><a href="#" class="menuitem lang" key="menuitem-2">munkáink</a></li>
+						</ul>
 
-						<li>
-							<ul class="social">
-								<li class="social-fb">
-									<a class="facebook" href="https://www.facebook.com/groups/bekelo/" target="blank" alt="facebook">facebook</a>
-								</li>
-							</ul>
+						<ul class="langchange">
+							<li>
+								<button class="hu button translate" id="hu">hu</button>
+							</li>
+
+							<li>
+					    	<button class="en button translate" id="en">en</button>
+							</li>
+						</ul>
+					</ul>
+
+				</nav>
+			</div>
+
+			<div class="welcome">
+				<object type="image/svg+xml" data="assets/welcome-sign.svg"
+					width="100%" height="100%" class="welcome-sign">
+				</object>
+			</div>
+
+			<h1 class="main lang" key="main">
+				mi vagyunk a winkler
+			</h1>
+		</header>
+
+		<section class="intro">
+			<h1 class="quote lang" key="quote">
+				gondolkodjunk együtt előremutató megoldásokon
+			</h1>
+
+			<ul class="scope">
+				<li class="act act-1">
+					<h3 class="act-head lang" key="act-head-1">Tervezünk és újragondolunk</h3>
+					<p class="act-text lang" key="act-text-1">
+						Print és online felületeket készítünk, amelyek segítenek neked a lehető legjobb ügyfélélmény elérésében.
+					</p>
+				</li>
+
+				<li class="act act-2">
+					<h3 class="act-head lang" key="act-head-2">Márkát építünk</h3>
+					<p class="act-text lang" key="act-text-2">
+						Megoldásokat kutatunk, hogyan tedd még vonzóbbá és könnyebben használhatóvá szolgáltatásodat ügyfeleid számára.
+					</p>
+				</li>
+
+				<li class="act act-3">
+					<h3 class="act-head lang" key="act-head-3">Nagy adatmennyiségből készítünk kiadványokat</h3>
+					<p class="act-text lang" key="act-text-3">
+						Átgondolt és kipróbált automatizálási folyamataink segítségével pontosan és gyorsan készítünk kiadványokat.
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="recent-work">
+			<div class="section-title-bar work-title">
+				<h2 class="section-title lang" key="recent-work">legújabb munkáink</h2>
+			</div>
+
+			<nav class="pager">
+				<span class="prev" alt="previous slide">previous slide</span>
+				<span class="next" alt="next slide">next slide</span>
+			</nav>
+
+			<div class="slider">
+				<ul class="carousel">
+					<li class="slide">
+						<img class="work-img-mobile" src="img/slide-1-m.png" />
+						<img class="work-img" src="img/slide-1.png" />
+
+						<div class="work-info">
+							<h5 class="work-head lang" key="ref-1">
+								Rossmann akciós magazin
+							</h5>
+
+							<p class="work-description lang" key="ref-desc-1">
+							</p>
+						</div>
+					</li>
+
+					<li class="slide">
+						<img class="work-img-mobile" src="img/slide-2-m.png" />
+						<img class="work-img" src="img/slide-2.png" />
+
+						<div class="work-info">
+							<h5 class="work-head lang" key="ref-2">
+								Kentaur magazin
+							</h5>
+
+							<p class="work-description lang" key="ref-desc-2">
+							</p>
+						</div>
+					</li>
+
+					<li class="slide">
+						<img class="work-img-mobile" src="img/slide-3-m.png" />
+						<img class="work-img" src="img/slide-3.png" />
+
+						<div class="work-info">
+							<h5 class="work-head lang" key="ref-3">
+								Üzleti Rendszerek rebranding
+							</h5>
+
+							<p class="work-description lang" key="ref-desc-3">
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="refs">
+			<ul class="clients">
+				<li class="client">
+					<img class="client-pic" src="img/rossmann.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/tui.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/esco.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/klinger-synergy.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/netto.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/ur-sysdev.png" width="500" height="500" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/volkswagen.png" width="500" height="500" />
+				</li>
+			</ul>
+		</section>
+
+		<section class="team">
+			<div class="section-title-bar team-head">
+				<h2 class="section-title lang" key="team-head">a csapat</h2>
+			</div>
+
+			<ul class="team-members">
+				<li class="member">
+					<img class="member-pic" src="img/gb.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="guszti">
+						Szakács Gusztáv Bálint
+					</h4>
+
+					<p class="jobtitle small lang" key="guszti-tags">
+						#can-do-attitude #kertészkedés #kommunikáció #felhasználóközpontú #design
+					</p>
+				</li>
+
+				<li class="member">
+					<img class="member-pic" src="img/d.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="dani">
+						Taskó Dániel
+					</h4>
+
+					<p class="jobtitle small lang" key="dani-tags">
+						#felhasználóközpontú_tervezés #újragondolás #vizualizáció #unikornis
+					</p>
+				</li>
+
+				<li class="member">
+					<img class="member-pic" src="img/e.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="eszter">
+						Tatay Eszter
+					</h4>
+
+					<p class="jobtitle small lang" key="eszter-tags">
+						#tipográfia #fantasy #fotomanip #StephenKing #retus
+					</p>
+				</li>
+
+				<li class="member">
+					<img class="member-pic" src="img/an.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="andris">
+						Demcsák András
+					</h4>
+
+					<p class="jobtitle small lang" key="andris-tags">
+						#hézagmentesillesztés #éjszakaiműszak #solutioneer #transporter #kütyük
+					</p>
+				</li>
+
+				<li class="member">
+					<img class="member-pic" src="img/a.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="bori">
+						Ficzere Adrienn
+					</h4>
+
+					<p class="jobtitle small lang" key="bori-tags">
+						#Front-end-design #kutatás #gondolatolvasás #britpop
+					</p>
+				</li>
+
+				<li class="member">
+					<img class="member-pic" src="img/b.jpg" width="260" height="368" />
+
+					<h4 class="subheading-4 member-head lang" key="balu">
+						Pesti Balázs
+					</h4>
+
+					<p class="jobtitle small lang" key="balu-tags">
+
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="info">
+			<div class="section-title-bar contact-head">
+				<h2 class="section-title lang" key="contact-head">kapcsolat</h2>
+			</div>
+
+			<ul class="contact">
+				<li class="location">
+					<h3 class="info-head location-head lang" key="location">
+						Találj meg!
+					</h3>
+
+					<p class="info-text">
+						<em>Winkler<span class="red">&amp</span class="lang" key="agency">Stenzel kreatívügynökség</em>
+						<strong class="address lang" key="address">1111 Budapest, Lágymányosi utca 20.</strong>
+					</p>
+
+					<ul class="social">
+						<li class="facebook">
+							<a href="#" alt="facebook">facebook</a>
+						</li>
+
+						<li class="twitter">
+							<a href="#" alt="twitter">twitter</a>
 						</li>
 					</ul>
-				</nav>
+				</li>
 
-			</section>
-		</div>
+				<li id="map" class="map">
+					<!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP-DlJa3dQUcRL9SJ5P1zKkw&key=AIzaSyCzto4Sqrr53vPXxfYZkT9Zo3Vo4oHeP7Q" allowfullscreen></iframe> -->
+				</li>
 
-		<div class="content">
-			<section id="01" class="section about">
-				<a href="#" class="close stop">
-					<img src="assets/close.svg"
-						width="65" height="65" />
-				</a>
+				<li class="contact-info">
+					<h3 class="info-head contact-info-head lang" key="contact">
+						Beszélgessünk!
+					</h3>
 
-				<h4 class="popup-heading subhead4">Kedves barátunk, rokonunk vagy üzletfelünk!</h4>
+					<ul class="info-text">
+						<li><strong class="mail"><a href="mailto:hello@winkler-stenzel.hu">info@winkler-stenzel.hu</a></strong></li>
+						<li><strong class="tel"><a href="tel:+36 30 582 6848">+36 30 582 6848</a></strong></li>
+					</ul>
+				</li>
+			</ul>
 
-				<p class="popup-paragraph text">
-					Egy éve szeptemberben Hatta és/vagy régi nevén Rozengain szigetén Adri kezére egy fura gyűrű került. Éles eszű megfigyelők ebből egyből arra következtettek, hogy ennek lesz folytatása is. S bizony lett, mert úgy döntöttünk, hogy 1bekelünk.
-				</p>
+			<h3 class="info-head international-head lang" key="international">
+				Nemzetköziek vagyunk
+			</h3>
 
-				<p class="popup-paragraph text">
-					Ezt egy eseménysorozattal szeretnénk megünnepelni, mely eseménysorozat bármely helyszínére (akár mindháromra is) szeretettel várunk, hiszen része vagy az életünknek, szeretnénk, ha most is velünk örülnél.
-				</p>
+			<ul class="international-contact">
 
-				<p class="popup-paragraph text">
-					Összekalapáltuk ezt a weboldalt, amin tájékozódhatsz a bekelőturné <a href="#04">eseményeiről</a>, megnézhetsz egy kis <a href="#03">filmecskét</a> arról a helyről, ahol Adri kezére egy gyűrű került, és nem utolsósorban megtudhatod, mi az a <a href="#02">„bekel”</a>.
-				</p>
-			</section>
+				<li class="hannover">
+					<h5 class="int-head small">Burgwedel/Hannover</h5>
 
-			<section id="02" class="section description">
-				<a href="#" class="close stop">
-					<img src="assets/close.svg"
-						width="65" height="65" />
-				</a>
+					<p class="small">
+						<span>Schulze-Delitzsch-Straße 35</span><span>30938 Burgwedel Germany</span><a href="tel:+49513989990">+49 51 39 89990</a><a href="mailto:info@winkler-stenzel.de">info@winkler-stenzel.de</a>
+					</p>
+				</li>
 
-				<h4 class="popup-heading subhead4">Nézzük, mit ír az újkori etnográfiai lexikon a bekelésről:</h4>
+				<li class="berlin">
+					<h5 class="int-head small">Berlin</h5>
 
-				<p class="popup-paragraph text">
-					<em>1. {esemény}:</em> A bekelés egy újkori magyar népszokás, mely rendszerint a leánykéréstől számított egy év után esedékes. Az esküvőtől/lagzitól abban különbözik, hogy teljesen más. Laza baráti összejövetel, örömködés, a legkevesebb kínnal.
-				</p>
+					<p class="small">
+						<span>Palisadenstraße 48</span><span>10243 Berlin Germany</span><a href="tel:+4930240009876">+49 30 240009876</a><a href="mailto:info@ateam.de">info@ateam.de</a>
+					</p>
+				</li>
 
-				<p class="popup-paragraph text">
-					<em>2. {játék}:</em> Indonéz ügyességi népi játék, mely során fél kézzel egy rugalmas apró (kb 2 cm átmérőjű) labdát pattogtatva kell a földön szétszórt apró tárgyakat összeszedni.
-				</p>
+				<li class="prague">
+					<h5 class="int-head small">Prague</h5>
 
-				<p class="popup-paragraph text">
-					<em>Egybekelésünk örömére, az újkori magyar népszokást követve bekelőturnézni fogunk.</em>
-				</p>
+					<p class="small">
+						<span>Na Pankraci 1683/127</span><span>140 00 Prague 4 Czech Republic</span><a href="mailto:info@winkler-stenzel.cz">info@winkler-stenzel.cz</a>
+					</p>
+				</li>
+			</ul>
+		</section>
 
-				<p class="popup-paragraph text">
-					Turnénk három helyszínt érint, s minden helszín eseménye mindenki számára nyitott. Gyere el arra, amelyik a legizgalmasabbnak tűnik, a legjobban belefér időbeosztásodba, vagy épp a legközelebb van hozzád. Akár mindhárom bekelő eseményen részt vehetsz! Várunk, mert 1bekelni, és ennek ürügyén örömködni is jó!
-				</p>
-			</section>
+		<footer class="footer">
+			<div class="footer-wrap">
+				<h5 class="ws-group-title lang" key="winklergroup">A Winkler&ampStenzel csoport:</h5>
 
-			<section id="03" class="section video">
-				<a href="#" class="close stop">
-					<img src="assets/close.svg"
-						width="65" height="65" />
-				</a>
+				<ul class="ws-group">
+					<li class="agency">
+						<a href="http://www.winkler-stenzel.de/" target="blank">
+							<img src="assets/wus_agency.png" width="200" height="31" />
+						</a>
+					</li>
 
-				<iframe id="player" class="imagefilm" width="640" height="360" src="https://www.youtube.com/embed/toY0UdzplHo" frameborder="0" allowfullscreen></iframe>
+					<li class="marketing">
+						<a href="http://www.winkler-stenzel.de/messe-marketing.html" target="blank">
+							<img src="assets/wus_marketing.png" width="200" height="31" />
+						</a>
+					</li>
 
-			</section>
+					<li class="it">
+						<a href="http://www.winkler-stenzel.de/software/teamsolution-travel/de/" target="blank">
+							<img src="assets/ateam.png" width="200" height="45" />
+						</a>
+					</li>
 
-			<section id="04" class="section events">
-				<a href="#" class="close stop">
-					<img src="assets/close.svg"
-						width="65" height="65" />
-				</a>
+					<li class="creative">
+						<a href="http://epicberlin.com/" target="blank">
+							<img src="assets/epic.png" width="100" height="46" />
+						</a>
+					</li>
+				</ul>
 
-				<h4 class="popup-heading subhead4">Adri&ampDani bekelő party tour 2017 eseményei</h4>
+				<ul class="footer-info">
+					<li class="goodbye-sign">
+						<img src="assets/goodbye-sign.svg" alt="Winkler&ampStenzel" />
+					</li>
 
-				<p class="popup-paragraph text">
-					<em class="block">Nulladik állomás – Hatta:</em>Gyere velünk Indonéziába, a Fűszer-szigetekre!<span class="lighter block">(Erről lemaradtál)</span>
-				</p>
+					<li class="copyright">
+						© 2017, Winkler&ampStenzel
+					</li>
+				</ul>
 
-				<p class="popup-paragraph text">
-					<em class="block">Első állomás – Brighton:</em>Grillezz velünk a tengerparton, aztán koccintsunk Brighton legfaszább kocsmájában! Tenger, eső, élet, Ale-k.<span class="block">Részletek itt: <a href="event1.html">brightoni esemény</a></span>
-				</p>
+			</div>
+		</footer>
 
-				<p class="popup-paragraph text">
-					<em class="block">Második állomás – Budapest:</em>Örömködj velünk Budapestiában!<span class="block">Részletek itt: <a href="event2.html">budapesti esemény</a></span>
-				</p>
+		<script>
+			function initMap() {
+				var winkler = {lat: 47.477865, lng: 19.054681};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 16,
+					center: winkler
+				});
+				var marker = new google.maps.Marker({
+					position: winkler,
+					map: map
+				});
+			}
+		</script>
 
-				<p class="popup-paragraph text">
-					<em class="block">Harmadik állomás – Bükk:</em>Tölts velünk egy éjszakát a Bükkben, a Rejteki Kutatóházban! Vadregény, barlangolás, csillagos éj.<span class="block">Részletek itt: <a href="event3.html">bükki esemény</a></span>
-				</p>
-			</section>
-
-			<section id="05" class="section pictures">
-				<a href="#" class="close stop">
-					<img src="assets/close.svg"
-						width="65" height="65" />
-				</a>
-
-				<h4 class="popup-heading subhead4">Egy bekelésen senki sem fotós, és mégis mindenki az!</h4>
-
-				<p class="popup-paragraph text">
-				</p>
-			</section>
-		</div>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzto4Sqrr53vPXxfYZkT9Zo3Vo4oHeP7Q&callback=initMap">
+		</script>
 	</body>
 </html>
