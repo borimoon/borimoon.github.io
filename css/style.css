@@ -110,7 +110,7 @@ strong,
 /* HEADER */
 
 .header {
-	/*background: url("../assets/bg.jpg") no-repeat;*/
+	background: url("../assets/bg.jpg") no-repeat;
 	background-size: cover;
 	-webkit-flex-direction: column;
 	flex-direction: column;

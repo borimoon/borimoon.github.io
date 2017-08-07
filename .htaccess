@@ -1,11 +1,15 @@
+Header unset Pragma
+FileETag None
+Header unset ETag
+
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|)$">
-Header set Cache-Control "max-age=31536000, public"
+Header set Cache-Control "max-age=31536000, public, must-revalidate"
 </filesMatch>
 
 # One month for js and svg
 <filesMatch ".(js|svg)$">
-Header set Cache-Control "max-age=2628000, public"
+Header set Cache-Control "max-age=2628000, public, must-revalidate"
 </filesMatch>
 
 # never for css
