@@ -110,7 +110,7 @@ strong,
 /* HEADER */
 
 .header {
-	background: url("../assets/bg.jpg") no-repeat;
+	/*background: url("../assets/bg.jpg") no-repeat;*/
 	background-size: cover;
 	-webkit-flex-direction: column;
 	flex-direction: column;
@@ -219,7 +219,7 @@ strong,
 }
 
 .welcome {
-	/*background: url("../assets/bg.svg") no-repeat;*/
+	background: url("../assets/bg.svg") no-repeat;
 	background-size: cover;
 	height: 100vh;
 	opacity: .8;
