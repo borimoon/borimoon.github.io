@@ -10,5 +10,5 @@ Header set Cache-Control "max-age=2628000, public"
 
 # never for css
 <filesMatch ".(css)$">
-Header set Cache-Control "max-age=0, no-cache, public"
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
 </filesMatch>

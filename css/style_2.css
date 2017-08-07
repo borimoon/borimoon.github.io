@@ -219,7 +219,7 @@ strong,
 }
 
 .welcome {
-	background: url("../assets/bg.svg") no-repeat;
+	/*background: url("../assets/bg.svg") no-repeat;*/
 	background-size: cover;
 	height: 100vh;
 	opacity: .8;
