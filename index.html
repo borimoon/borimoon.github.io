@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
 	<head>
-
 		<meta charset="utf-8" />
 
 		<title>Winkler&amp;Stenzel kreatívügynökség</title>
@@ -10,7 +9,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 		<link rel="stylesheet" href="css/style.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400|Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet" />
 
 		<meta name="author" content="winklerhu" />
 		<meta name="description" content="We are winkler. We are hard working and easy going." />
@@ -47,12 +46,11 @@
 						<img src="assets/wslogo.svg" class="logo" width="160" height="25" alt="Winkler&ampStenzel"/>
 					</a>
 
-					<div id="toggleOn" class="toggle-on"><p class="small strong red lang" key="toggle-menu">menü</p></div>
+					<div id="toggleOn" class="toggle-on"><span class="small strong red lang" key="toggle-menu"></span></div>
 
 					<ul id="menu" class="menu">
 						<ul class="main-menu">
-							<li><a href="#" class="menuitem lang" key="menuitem-1">rólunk</a></li>
-							<li><a href="#" class="menuitem lang" key="menuitem-2">munkáink</a></li>
+							<li><a href="work.html" class="menuitem lang" key="menuitem-2">munkáink</a></li>
 						</ul>
 
 						<ul class="langchange">
@@ -70,7 +68,7 @@
 			</div>
 
 			<div class="welcome">
-				<object type="image/svg+xml" data="assets/welcome-sign.svg"
+				<object type="image/svg+xml" data="assets/sign.svg"
 					width="100%" height="100%" class="welcome-sign">
 				</object>
 			</div>
@@ -111,96 +109,103 @@
 
 		<section class="recent-work">
 			<div class="section-title-bar work-title">
-				<h2 class="section-title lang" key="recent-work">legújabb munkáink</h2>
+				<h1 class="section-title lang" key="recent-work">a legújabbak</h1>
 			</div>
 
-			<nav class="pager">
-				<span class="prev" alt="previous slide">previous slide</span>
-				<span class="next" alt="next slide">next slide</span>
-			</nav>
+			<div class="cases">
+				<section class="case case-0">
+					<a href="pinterest.html">
+						<h2 class="case-title lang" key="case1">
+							Pinterest
+						</h2>
 
-			<div class="slider">
-				<ul class="carousel">
-					<li class="slide">
-						<img class="work-img-mobile" src="img/slide-1-m.png" />
-						<img class="work-img" src="img/slide-1.png" />
+						<p class="case-subtitle">
+							illusztráció, display
+						</p>
+					</a>
+				</section>
 
-						<div class="work-info">
-							<h5 class="work-head lang" key="ref-1">
-								Rossmann akciós magazin
-							</h5>
+				<section class="case case-2">
+					<a href="#">
+						<h2 class="case-title lang" key="case2">
+							Viszkok Fruzsi
+						</h2>
 
-							<p class="work-description lang" key="ref-desc-1">
-							</p>
-						</div>
-					</li>
+						<p class="case-subtitle">
+							kedvenc Rossmann termékei
+						</p>
+					</a>
+				</section>
 
-					<li class="slide">
-						<img class="work-img-mobile" src="img/slide-2-m.png" />
-						<img class="work-img" src="img/slide-2.png" />
+				<section class="case case-3">
+					<a href="#">
+						<h2 class="case-title lang" key="case1">
+							System Developers
+						</h2>
 
-						<div class="work-info">
-							<h5 class="work-head lang" key="ref-2">
-								Kentaur magazin
-							</h5>
-
-							<p class="work-description lang" key="ref-desc-2">
-							</p>
-						</div>
-					</li>
-
-					<li class="slide">
-						<img class="work-img-mobile" src="img/slide-3-m.png" />
-						<img class="work-img" src="img/slide-3.png" />
-
-						<div class="work-info">
-							<h5 class="work-head lang" key="ref-3">
-								Üzleti Rendszerek rebranding
-							</h5>
-
-							<p class="work-description lang" key="ref-desc-3">
-							</p>
-						</div>
-					</li>
-				</ul>
+						<p class="case-subtitle">
+							logó redesign
+						</p>
+					</a>
+				</section>
 			</div>
 		</section>
 
 		<section class="refs">
 			<ul class="clients">
 				<li class="client">
-					<img class="client-pic" src="img/rossmann.png" width="500" height="500" />
+					<img class="client-pic" src="img/airberlin.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/tui.png" width="500" height="500" />
+					<img class="client-pic" src="img/pinterest.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/esco.png" width="500" height="500" />
+					<img class="client-pic" src="img/tui.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/klinger-synergy.png" width="500" height="500" />
+					<img class="client-pic" src="img/volkswagen.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/netto.png" width="500" height="500" />
+					<img class="client-pic" src="img/rossmann.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/ur-sysdev.png" width="500" height="500" />
+					<img class="client-pic" src="img/ur.svg" />
 				</li>
 
 				<li class="client">
-					<img class="client-pic" src="img/volkswagen.png" width="500" height="500" />
+					<img class="client-pic" src="img/esco.svg" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/netto.svg" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/ks.svg" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/dt.svg" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/tc.svg" />
+				</li>
+
+				<li class="client">
+					<img class="client-pic" src="img/mymuesli.svg" />
 				</li>
 			</ul>
 		</section>
 
 		<section class="team">
 			<div class="section-title-bar team-head">
-				<h2 class="section-title lang" key="team-head">a csapat</h2>
+				<h1 class="section-title lang" key="team-head">a csapat</h1>
 			</div>
 
 			<ul class="team-members">
@@ -265,14 +270,14 @@
 				</li>
 
 				<li class="member">
-					<img class="member-pic" src="img/b.jpg" width="260" height="368" />
+					<img class="member-pic" src="img/b-1.jpg" width="260" height="368" />
 
 					<h4 class="subheading-4 member-head lang" key="balu">
 						Pesti Balázs
 					</h4>
 
 					<p class="jobtitle small lang" key="balu-tags">
-
+						#aranymetszet #aprórészletek #természetesen #süti #Dunakanyar
 					</p>
 				</li>
 			</ul>
@@ -280,7 +285,7 @@
 
 		<section class="info">
 			<div class="section-title-bar contact-head">
-				<h2 class="section-title lang" key="contact-head">kapcsolat</h2>
+				<h1 class="section-title lang" key="contact-head">kapcsolat</h1>
 			</div>
 
 			<ul class="contact">
@@ -290,7 +295,7 @@
 					</h3>
 
 					<p class="info-text">
-						<em>Winkler<span class="red">&amp</span class="lang" key="agency">Stenzel kreatívügynökség</em>
+						<em>Winkler<span class="red">&amp</span> <span class="lang" key="agency">Stenzel kreatívügynökség</span></em>
 						<strong class="address lang" key="address">1111 Budapest, Lágymányosi utca 20.</strong>
 					</p>
 
@@ -306,7 +311,6 @@
 				</li>
 
 				<li id="map" class="map">
-					<!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP-DlJa3dQUcRL9SJ5P1zKkw&key=AIzaSyCzto4Sqrr53vPXxfYZkT9Zo3Vo4oHeP7Q" allowfullscreen></iframe> -->
 				</li>
 
 				<li class="contact-info">
@@ -314,10 +318,10 @@
 						Beszélgessünk!
 					</h3>
 
-					<ul class="info-text">
-						<li><strong class="mail"><a href="mailto:hello@winkler-stenzel.hu">info@winkler-stenzel.hu</a></strong></li>
-						<li><strong class="tel"><a href="tel:+36 30 582 6848">+36 30 582 6848</a></strong></li>
-					</ul>
+					<div class="info-text">
+						<p><strong class="mail"><a href="mailto:hello@winkler-stenzel.hu">info@winkler-stenzel.hu</a></strong></p>
+						<p><strong class="tel"><a href="tel:+36 30 582 6848">+36 30 582 6848</a></strong></p>
+					</div>
 				</li>
 			</ul>
 
