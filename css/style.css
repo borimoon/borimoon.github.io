@@ -547,7 +547,6 @@ strong,
 }
 
 .member img {
-	border-radius: 2px;
 	display: block;
 	height: 170px;
 	margin: 0 auto;
@@ -595,44 +594,10 @@ strong,
 	position: relative;
 }
 
-.info-head::after {
-	background-color: #D5FB15;
-	content: ' ';
-	display: block;
-	height: 10px;
-	position: absolute;
-	top: 17px;
-	width: 100%;
-	z-index: -1;
-}
-
-.location-head::after {
-	left: 50%;
-	margin-left: -30px;
-	width: 60px;
-}
-
-.contact-info-head::after {
-	left: 50%;
-	margin-left: -45px;
-	width: 90px;
-}
-
-.international-head::after {
-	left: 50%;
-	margin-left: -80px;
-	width: 160px;
-}
-
 .address {
 	display: block;
 	margin-top: 9px;
 }
-
-/*.address::after {
-	background-color: #E2001A;
-	margin: 12px auto 7px;
-}*/
 
 .location,
 .map,
@@ -646,7 +611,6 @@ strong,
 
 .map {
 	background-color: grey;
-	border-radius: 3px;
 	height: 30vh;
 	width: auto;
 }
@@ -825,7 +789,9 @@ strong,
 	}
 
 	.button:focus {
-		background-color: #D5FB15;
+		background-color: transparent;
+		font-weight: 700;
+		color: #013840;
 	}
 
 	/*INTRO > 750*/

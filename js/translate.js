@@ -29,8 +29,42 @@ var arrLang = {
     'agency': 'Stenzel kreatívügynökség',
     'address': '1111 Budapest, Lágymányosi utca 20.',
     'contact': 'Beszélgessünk!',
-    'international': 'Nemzetköziek vagyunk',
+    'international': 'Nemzetköziek vagyunk:',
     'winklergroup': 'A Winkler&Stenzel csoport'
+  },
+
+  'de': {
+    'menuitem-1': 'agentur',
+    'menuitem-2': 'portfolio',
+    'main': 'wir sind winkler',
+    'quote': 'Lassen Sie uns gemeinsam nach der besten Lösung für Ihr Unternehmen oder Ihr Produkt suchen!',
+    'act-head-1': 'Wir planen, entwickeln und realisieren',
+    'act-text-1': 'Marketing-Konzepte und Kreationen in Digital und Print - für ein ideales Kundenerlebnis',
+    'act-head-2': 'Wir machen Marken',
+    'act-text-2': 'Wir suchen nach Lösungen mit denen Sie erfolgreich den ungarischen Markt erobern können',
+    'act-head-3': 'Schneller, leichter, zuverlässiger',
+    'act-text-3': 'Mit unseren erprobten Tools zur automatisierten Medienproduktion, können wir Ihre Prospekte, Kataloge oder Preislisten zukünftig schneller und effizienter produzieren',
+    'recent-work': 'aktuell',
+    'team-head': 'Das Team',
+    'guszti': 'Gusztav Balint Szakacs',
+    'guszti-tags': '#can-do-attitude #Gartenarbeit #Kommunikation #Benutzerorientiert #design',
+    'dani': 'Daniel Tasko',
+    'dani-tags': '#user-centered-design #rethink #Visualisierung #unicorn',
+    'eszter': 'Eszter Tatay',
+    'eszter-tags': '#Typographie #fantasy #photomanip #StephenKing #Retusche',
+    'andris': 'Andras Demcsak',
+    'andris-tags': '#hézagmentesillesztés #Nachtschicht #solutioneer #transporter #kütyük',
+    'bori': 'Adrienn Ficzere',
+    'bori-tags': '#front-end-design #Forschung #Gedanklesen #britpop',
+    'balu': 'Balazs Pesti',
+    'balu-tags': '#goldenratio #tinydetails #naturally #Kuchen #Dunakanyar',
+    'contact-head': 'Kontakt',
+    'location': 'Finden Sie uns!',
+    'agency': 'Stenzel Kreativ Agentur',
+    'address': '20. Lágymányosi str., Budapest 1111',
+    'contact': 'Wir freuen uns auf eine Nachricht!',
+    'international': 'Wir sind international:',
+    'winklergroup': 'Winkler&Stenzel group'
   },
 
   'en': {
@@ -63,12 +97,8 @@ var arrLang = {
     'agency': 'Stenzel creative group',
     'address': '20. Lágymányosi str., Budapest 1111',
     'contact': 'Say something!',
-    'international': 'We are international',
+    'international': 'We are international:',
     'winklergroup': 'Winkler&Stenzel group'
-  },
-
-  'de': {
-
   }
 };
 
