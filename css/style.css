@@ -317,6 +317,7 @@ strong,
 	border: none;
 	color: white;
 	cursor: pointer;
+	font-size: 17px;
 	height: 28px;
 	line-height: 28px;
 	outline: none;
@@ -783,6 +784,7 @@ strong,
 
 	.button {
 		background-color: #013840;
+		font-size: 11px;
 		height: 14px;
 		line-height: 14px;
 		width: 23px;
