@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.9/interact.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-1">
+        <div id="drag-1" class="draggable drag-1"></div>
+        <div id="drag-2" class="draggable drag-2"></div>
+        <div id="drag-3" class="draggable drag-3"></div>
+        <div id="drag-4" class="draggable drag-4"></div>
+      </div>
+
+      <div class="row row-2">
+        <div id="drag-5" class="draggable drag-5"></div>
+        <div id="drag-6" class="draggable drag-6"></div>
+        <div id="drag-7" class="draggable drag-7"></div>
+        <div id="drag-8" class="draggable drag-8"></div>
+      </div>
+
+      <div class="row row-3">
+        <div id="drag-9" class="draggable drag-9"></div>
+        <div id="drag-10" class="draggable drag-10"></div>
+        <div id="drag-11" class="draggable drag-11"></div>
+        <div id="drag-12" class="draggable drag-12"></div>
+      </div>
+
+      <div class="row row-4">
+        <div id="drag-13" class="draggable drag-13"></div>
+        <div id="drag-14" class="draggable drag-14"></div>
+        <div id="drag-15" class="draggable drag-15"></div>
+        <div id="drag-16" class="draggable drag-16"></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+  // target elements with the "draggable" class
+  interact('.draggable')
+    .draggable({
+      // enable inertial throwing
+      inertia: true,
+      // keep the element within the area of it's parent
+
+      // restrict: {
+      //   restriction: "parent",
+      //   endOnly: true,
+      //   elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+      // },
+
+      // enable autoScroll
+      autoScroll: true,
+
+      // call this function on every dragmove event
+      onmove: dragMoveListener,
+      // call this function on every dragend event
+      onend: function (event) {
+        var textEl = event.target.querySelector('p');
+
+        textEl && (textEl.textContent =
+          'moved a distance of '
+          + (Math.sqrt(event.dx * event.dx +
+                       event.dy * event.dy)|0) + 'px');
+      }
+    });
+
+    function dragMoveListener (event) {
+      var target = event.target,
+          // keep the dragged position in the data-x/data-y attributes
+          x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+          y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+      // translate the element
+      target.style.webkitTransform =
+      target.style.transform =
+        'translate(' + x + 'px, ' + y + 'px)';
+
+      // update the posiion attributes
+      target.setAttribute('data-x', x);
+      target.setAttribute('data-y', y);
+    }
+
+    // this is used later in the resizing and gesture demos
+    window.dragMoveListener = dragMoveListener;
+  </script>
+
+</html>

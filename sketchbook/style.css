@@ -1,0 +1,55 @@
+body {
+  background: #FAFAFA;
+  }
+
+.container {
+  background: #fff;
+  height: 450px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.canvas {
+  background: url('assets/rajz.png') center center no-repeat;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  cursor: crosshair;
+  display: block;
+  margin: 70px auto 0;
+}
+
+.settings {
+  margin: 22px auto 0;
+  text-align: center;
+  width: 700px;
+}
+
+.settings .btn {
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  height: 32px;
+  margin-right: 17px;
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 32px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.pencil {
+  background: url('assets/pencil.svg') no-repeat;
+}
+
+.color {
+  background: url('assets/color.svg') no-repeat;
+}
+
+.eraser {
+  background: url('assets/eraser.svg') no-repeat;
+}
