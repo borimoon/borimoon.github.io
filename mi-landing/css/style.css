@@ -92,11 +92,16 @@ a {
 
 .toggle span,
 .menuopen span {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   display: block;
-  height: 4px;
+  height: 7px;
   position: relative;
-  width: 25px;
+}
+
+.menuopen span {
+  width: 44px;
 }
 
 .toggle span {
@@ -106,17 +111,20 @@ a {
   -ms-transition: background-color .7s ease;
   -o-transition: background-color .7s ease;
   transition: background-color .7s ease;
+  width: 37px;
 }
 
 .toggle span::before,
 .toggle span::after {
   background-color: #070707;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   content: ' ';
   display: block;
-  height: 4px;
+  height: 7px;
   position: absolute;
-  width: 25px;
+  width: 37px;
   -webkit-transition: transform .3s ease;
   -moz-transition: transform .3s ease;
   -ms-transition: transform .3s ease;
@@ -125,11 +133,11 @@ a {
 }
 
 .toggle span::before {
-  top: -9px;
+  top: -13px;
 }
 
 .toggle span::after {
-  bottom: -9px;
+  bottom: -13px;
 }
 
 .menuopen span {
@@ -144,12 +152,14 @@ a {
 .menuopen span::before,
 .menuopen span::after {
   background-color: #070707;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   content: ' ';
   display: block;
-  height: 4px;
+  height: 7px;
   position: absolute;
-  width: 30px;
+  width: 44px;
   -webkit-transition: transform .3s ease;
   -moz-transition: transform .3s ease;
   -ms-transition: transform .3s ease;
@@ -158,19 +168,19 @@ a {
 }
 
 .menuopen span::before {
-  -webkit-transform: translateY(9px) rotateZ(45deg);
-  -moz-transform: translateY(9px) rotateZ(45deg);
-  -ms-transform: translateY(9px) rotateZ(45deg);
-  -o-transform: translateY(9px) rotateZ(45deg);
-  transform: translateY(9px) rotateZ(45deg);
+  -webkit-transform: translateY(13px) rotateZ(45deg);
+  -moz-transform: translateY(13px) rotateZ(45deg);
+  -ms-transform: translateY(13px) rotateZ(45deg);
+  -o-transform: translateY(13px) rotateZ(45deg);
+  transform: translateY(13px) rotateZ(45deg);
 }
 
 .menuopen span::after {
-  -webkit-transform: translateY(-9px) rotateZ(-45deg);
-  -moz-transform: translateY(-9px) rotateZ(-45deg);
-  -ms-transform: translateY(-9px) rotateZ(-45deg);
-  -o-transform: translateY(-9px) rotateZ(-45deg);
-  transform: translateY(-9px) rotateZ(-45deg);
+  -webkit-transform: translateY(-13px) rotateZ(-45deg);
+  -moz-transform: translateY(-13px) rotateZ(-45deg);
+  -ms-transform: translateY(-13px) rotateZ(-45deg);
+  -o-transform: translateY(-13px) rotateZ(-45deg);
+  transform: translateY(-13px) rotateZ(-45deg);
 }
 
 .menu {
@@ -225,26 +235,105 @@ a {
   align-items: stretch;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   -webkit-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 
 .row {
+  -webkit-align-items: center;
+  align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+
+.row-1,
+.row-3 {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.row-2 {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
 .element {
-  background-color: #07a0c8;
-  height: 50px;
   margin: 10px;
-  width: 50px;
+}
+
+.element-1 {
+  border-bottom: 58px solid #07a0c8;
+  border-right: 88px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.element-2 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 32px;
+}
+
+.element-3 {
+  background-color: #07a0c8;
+  height: 19px;
+  width: 69px;
+}
+
+.element-4 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 81px;
+}
+
+.element-5 {
+  background-color: #07a0c8;
+  height: 62px;
+  position: relative;
+  width: 70px;
+}
+
+.element-5::after {
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  bottom: 9px;
+  content: '';
+  display: block;
+  height: 30px;
+  position: absolute;
+  right: 9px;
+  width: 30px;
+}
+
+.element-6 {
+  border-bottom: 58px solid #07a0c8;
+  border-left: 88px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.element-7 {
+  background-color: #07a0c8;
+  height: 81px;
+  width: 25px;
+}
+
+.element-8 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 34px;
+}
+
+.element-9 {
+  background-color: #07a0c8;
+  height: 81px;
+  width: 81px;
 }
 
 .draggable {
@@ -265,6 +354,8 @@ a {
 
 .scroll-down {
   background-color: #070707;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
   height: 34px;
@@ -275,6 +366,8 @@ a {
 
 .scroll-down::after {
   background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   content: '';
   display: block;
@@ -293,18 +386,38 @@ a {
   padding-top: 80px;
 }
 
-.uvp-item {
-  margin-bottom: 70px;
-}
-
-.uvp-item:last-child {
-  margin-bottom: 0;
-}
-
 .uvp-text {
   font-size: 1.7em;
   font-weight: 600;
   line-height: 1.3;
+}
+
+.triangle,
+.square,
+.circle {
+  margin: 42px auto 42px;
+}
+
+.triangle {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid #07a0c8;
+  height: 0;
+  width: 0;
+}
+
+.square {
+  background-color: #07a0c8;
+  height: 37px;
+  width: 37px;
+}
+
+.circle {
+  background-color: #07a0c8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;  height: 40px;
+  width: 40px;
 }
 
 /*cta*/
@@ -318,9 +431,45 @@ a {
 
 /*footer*/
 .footer {
-  margin-bottom: 17px;
-  margin-top: 100px;
+  margin: 100px 10px 17px;
   text-align: center;
+}
+
+.top span {
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  margin: 0 auto 22px;
+  position: relative;
+  width: 30px;
+}
+
+.top span::before,
+.top span::after {
+  background-color: #5f6061;
+  content: '';
+  display: block;
+  height: 21px;
+  position: absolute;
+  width: 7px;
+}
+
+.top span::before {
+  left: 6px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.top span::after {
+  right: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .social {
@@ -343,9 +492,61 @@ a {
 @media (min-width: 900px) {
 
   /*header900*/
+  /*game900*/
+  .element-1 {
+    border-bottom-width: 97px;
+    border-right-width: 148px;
+  }
+
+  .element-2 {
+    height: 48px;
+    width: 53px;
+  }
+
+  .element-3 {
+    height: 32px;
+    width: 116px;
+  }
+
+  .element-4 {
+    height: 48px;
+    width: 136px;
+  }
+
+  .element-5 {
+    height: 105px;
+    width: 117px;
+  }
+
+  .element-5::after {
+    bottom: 15px;
+    height: 49px;
+    right: 15px;
+    width: 49px;
+  }
+
+  .element-6 {
+    border-bottom-width: 97px;
+    border-left-width: 148px;
+  }
+
+  .element-7 {
+    height: 137px;
+    width: 42px;
+  }
+
+  .element-8 {
+    height: 48px;
+    width: 57px;
+  }
+
+  .element-9 {
+    height: 136px;
+    width: 136px;
+  }
+  /*/game900*/
+
   /*uvp section900*/
-
-
   /*cta section900*/
   /*footer900*/
 
@@ -428,6 +629,7 @@ a {
   .element {
     margin: 0;
   }
+
   /*/game1200*/
 
   .cta-landing {
@@ -490,6 +692,7 @@ a {
 
   .uvp-item {
     margin-bottom: 0;
+    position: relative;
   }
 
   .who-we-are {
@@ -502,14 +705,45 @@ a {
     text-align: right;
   }
 
+  .triangle,
+  .square,
+  .circle {
+    position: absolute;
+  }
+
+  .triangle {
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-top-width: 34px;
+    left: -300px;
+    margin: -17px 0 0;
+    top: 50%;
+  }
+
   .what-we-do {
     grid-column: 2;
     grid-row: 2;
   }
 
+  .square {
+    height: 60px;
+    margin: -30px 0 0;
+    right: -300px;
+    top: 50%;
+    width: 60px;
+  }
+
   .tools {
     grid-column: 1;
     grid-row: 3;
+  }
+
+  .circle {
+    height: 64px;
+    left: -300px;
+    margin: -32px 0 0;
+    top: 50%;
+    width: 64px;
   }
 
   .why-us {
@@ -525,8 +759,23 @@ a {
 
   /*footer1200*/
   .footer {
-    margin-bottom: 27px;
-    margin-top: 190px;
+    margin: 190px auto 27px;
+    position: relative;
+    width: 1200px;
+  }
+
+  .top {
+    position: absolute;
+    right: 0;
+    top: -220px;
+  }
+
+  .top span {
+    margin: 0 0 0;
+  }
+
+  .social {
+    margin-bottom: 35px;
   }
 }
 
