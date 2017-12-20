@@ -80,8 +80,6 @@ h1 {
 .tree {
   -webkit-align-items: center;
   align-items: center;
-  -webkit-flex: 3 1;
-  flex: 3 1;
   -webkit-justify-content: center;
   justify-content: center;
 }
@@ -106,10 +104,10 @@ h1 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  height: 42px;
+  height: 30px;
   margin: 3px;
   position: relative;
-  width: 42px;
+  width: 30px;
 }
 
 .ornaments li::before {
@@ -127,6 +125,10 @@ h1 {
   -o-transform: rotate(7deg);
   transform: rotate(7deg);
   width: 3px;
+}
+
+.ornaments li:nth-child(5)::before {
+  display: none;
 }
 
 .ornaments li:nth-child(3n) {
@@ -158,6 +160,10 @@ h1 {
   background-color: #B8E986;
 }
 
+.top {
+  background-color: yellow;
+}
+
 .footer {
   background-color: #009475;
   display: none;
@@ -172,7 +178,7 @@ h1 {
   }
 }
 
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 599px) and (orientation: landscape) {
 
   .header {
     position: relative;
@@ -245,6 +251,27 @@ h1 {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     max-width: 278px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .ornaments li {
+    height: 42px;
+    width: 42px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) and (orientation: landscape) {
+
+  .ornaments,
+  .tree {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+  }
+
+  .ornaments li {
+    height: 30px;
+    width: 30px;
   }
 }
 
