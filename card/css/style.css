@@ -17,6 +17,7 @@ body {
   background-image: -o-linear-gradient(bottom, #009475 0%, #29B8B5 50%, #4DD8ED 100%);
   background-image: linear-gradient(bottom, #009475 0%, #29B8B5 50%, #4DD8ED 100%);
   font-family: 'Lato', sans-serif;
+  overflow: hidden;
 }
 
 h1 {
