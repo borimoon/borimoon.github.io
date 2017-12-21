@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="author" content="Winkler Stenzel" />
-    <meta name="description" content="..." />
+    <meta name="description" content="Miműhely – építészet és design" />
     <meta property="og:image" content="#" />
     <meta property="og:description" content="..." />
-    <meta property="og:title" content="Mi architec studio" />
-    <meta name="twitter:title" content="Mi architec studio" />
+    <meta property="og:title" content="Miműhely – építészet és design" />
+    <meta name="twitter:title" content="Miműhely – építészet és design" />
 
-    <link rel="icon" type="image/png" href="#" sizes="16x16" />
-    <link rel="icon" type="image/png" href="#" sizes="32x32" />
-    <link rel="icon" type="image/png" href="#" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon-16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-96.png" sizes="96x96" />
 
-    <link rel="apple-touch-icon" href="#" />
-    <link rel="apple-touch-icon" sizes="180x180" href="#" />
-    <link rel="apple-touch-icon" sizes="152x152" href="#" />
-    <link rel="apple-touch-icon" sizes="167x167" href="#" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-167.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,600|Architects+Daughter&amp;subset=latin-ext" rel="stylesheet">
 
@@ -33,7 +33,7 @@
   </head>
 
   <body>
-    <header id="navbar" class="header header-gallery">
+    <header id="navbar" class="header header-narrow-pages">
       <a class="branding" href="index.html">
         <img class="logo-small" src="assets/Mi-logo-s.svg" width="42" height="40" alt="Mi műhely"/>
       </a>
@@ -44,21 +44,21 @@
 
         <ul id="menu" class="menu">
           <li>
-            <a class="menuitem menu-projects" href="#">projektek</a>
+            <a class="menuitem" href="gallery.html">projektek</a>
           </li>
 
           <li>
-            <a class="menuitem" href="#">írások</a>
+            <a class="menuitem" href="blog.html">írások</a>
           </li>
 
           <li>
-            <a class="menuitem" href="#">kapcsolat</a>
+            <a class="menuitem" href="contact.html">kapcsolat</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="project-page">
+    <div class="page-wrap page-wrap-projects">
       <nav class="nav-top">
         <ul class="nav-list">
           <li class="nav-item nav-top-item">
@@ -76,18 +76,18 @@
       </nav>
 
       <section class="project-x">
-        <div class="project-image main-image">
-          <img src="images/main.jpg" width="1200" height="700" />
+        <div class="image">
+          <img src="images/main.jpg" width="1280" height="720" />
         </div>
 
         <section class="project-description">
           <main class="project-main">
-            <h2 class="project-title">
-              Projekt címe
+            <h2 class="main-title">
+              Kiscsurgó köz
             </h2>
 
             <p class="text">
-              This art museum is located on the outskirts of Jingdezhen, a city famed for its porcelain production, so architecture studio DL Atelier chose to use the local clay-heavy earth for its walls. This art museum is located on the outskirts of Jingdezhen, a city famed for its porcelain production, so architecture studio DL Atelier chose to use the local clay-heavy earth for its walls.
+              This art museum is located on the outskirts of Jingdezhen, a city famed for its porcelain production, so architecture studio DL Atelier chose to use the local clay-heavy earth for its walls. This art museum is located on the outskirts of Jingdezhen, a city famed for its porcelain production, so architecture studio DL Atelier chose to use the local clay-heavy earth for its walls...
             </p>
 
             <p class="project-download">
@@ -95,21 +95,28 @@
             </p>
           </main>
 
-          <ul class="project-side">
-            <li class="side-text"><em>státusz:</em></li>
-            <li class="side-text"><em>tervezés éve:</em> 2016</li>
-            <li class="side-text"><em>építés éve:</em> 2017</li>
-            <li class="side-text"><em>földrajzi hely:</em></li>
-            <li class="side-text"><em>bruttó szintterület:</em></li>
-          </ul>
+          <div class="additional">
+            <ul class="project-side">
+              <li class="side-text"><em>státusz:</em></li>
+              <li class="side-text"><em>tervezés éve:</em> 2016</li>
+              <li class="side-text"><em>építés éve:</em> 2017</li>
+              <li class="side-text"><em>földrajzi hely:</em></li>
+              <li class="side-text"><em>bruttó szintterület:</em></li>
+            </ul>
 
-          <div class="project-map">
+            <div class="map project-map">
+              <img src="assets/map.png" />
+            </div>
           </div>
         </section>
 
-        <div class="portrait">
-          <div class="project-image project-image-portrait">
-            <img src="images/portrait.jpg" width="590" height="700" />
+        <div class="image project-image landscape">
+          <img src="images/landscape.jpg" width="1280" height="720" />
+        </div>
+
+        <div class="add-quote">
+          <div class="image project-image portrait">
+            <img src="images/portrait.jpg" width="720" height="720" />
           </div>
 
           <quote class="quote quote-left">
@@ -117,10 +124,9 @@
           </quote>
         </div>
 
-        <div class="project-image">
-          <img src="images/landscape.jpg" width="1200" height="700" />
+        <div class="image project-image plan">
+          <img src="images/plan.jpg" width="1168" height="779" />
         </div>
-
       </section>
 
       <nav class="nav-bottom">
@@ -138,7 +144,7 @@
           </li>
         </ul>
       </nav>
-    </section>
+    </div>
 
     <footer class="footer">
       <p class="social">
@@ -152,4 +158,40 @@
       </p>
     </footer>
   </body>
+
+  <script>
+  // Hide Header on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('#navbar').outerHeight();
+
+  $(window).scroll(function(event){
+  	didScroll = true;
+  });
+
+  setInterval(function() {
+  	if (didScroll) {
+  		hasScrolled();
+  		didScroll = false;
+  	}
+  }, 250);
+
+  function hasScrolled() {
+  	var sTop = $(this).scrollTop();
+
+  	if(Math.abs(lastScrollTop - sTop) <= delta)
+  	return;
+
+  	if (sTop > lastScrollTop && sTop > navbarHeight){
+  		$('#navbar').removeClass('down').addClass('up');
+  	} else {
+  			if (sTop + $(window).height() < $(document).height()) {
+  					$('#navbar').removeClass('up').addClass('down');
+  			}
+  	}
+
+  	lastScrollTop = sTop;
+  }
+  </script>
 </html>

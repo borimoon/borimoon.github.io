@@ -2,25 +2,25 @@
 <html lang="hu">
   <head>
     <meta charset="utf-8" />
-    <title>Mi</title>
+    <title>Miműhely – építészet és design</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="author" content="Winkler Stenzel" />
-    <meta name="description" content="..." />
+    <meta name="description" content="Miműhely – építészet és design" />
     <meta property="og:image" content="#" />
     <meta property="og:description" content="..." />
-    <meta property="og:title" content="Mi architec studio" />
-    <meta name="twitter:title" content="Mi architec studio" />
+    <meta property="og:title" content="Miműhely – építészet és design" />
+    <meta name="twitter:title" content="Miműhely – építészet és design" />
 
-    <link rel="icon" type="image/png" href="#" sizes="16x16" />
-    <link rel="icon" type="image/png" href="#" sizes="32x32" />
-    <link rel="icon" type="image/png" href="#" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon-16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-96.png" sizes="96x96" />
 
-    <link rel="apple-touch-icon" href="#" />
-    <link rel="apple-touch-icon" sizes="180x180" href="#" />
-    <link rel="apple-touch-icon" sizes="152x152" href="#" />
-    <link rel="apple-touch-icon" sizes="167x167" href="#" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-167.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,600|Architects+Daughter&amp;subset=latin-ext" rel="stylesheet">
 
@@ -33,10 +33,10 @@
   </head>
 
   <body>
-    <header id="navbar" class="header">
+    <header id="navbar" class="header header-full">
       <a class="branding" href="#">
-        <img class="logo" src="assets/Mi-logo.svg" alt="Mi műhely"/>
-        <img class="logo-small" src="assets/Mi-logo-s.svg" width="42" height="40" alt="Mi műhely"/>
+        <img class="logo logo-main logo-transform" src="assets/Mi-logo.svg" alt="Mi műhely"/>
+        <img class="logo-small logo-transform" src="assets/Mi-logo-s.svg" width="42" height="40" alt="Mi műhely"/>
       </a>
 
       <nav class="main-menu">
@@ -49,11 +49,11 @@
           </li>
 
           <li>
-            <a class="menuitem" href="#">írások</a>
+            <a class="menuitem" href="blog.html">írások</a>
           </li>
 
           <li>
-            <a class="menuitem" href="#">kapcsolat</a>
+            <a class="menuitem" href="contact.html">kapcsolat</a>
           </li>
         </ul>
       </nav>
@@ -222,16 +222,22 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > $('.landing').offset().top){
           $('.header').addClass("header-narrow");
+          $('.header').removeClass("header-full");
         }
         else {
           $('.header').removeClass("header-narrow");
+          $('.header').addClass("header-full");
         }
 
         if ($('.header').hasClass("header-narrow")){
           $('.logo').attr("src", "assets/Mi-logo-s.svg");
+          $('.logo').removeClass("logo-main");
+          $('.logo').addClass("logo-main-small");
         }
         else if ($('.header').removeClass("header-narrow")) {
           $('.logo').attr("src", "assets/Mi-logo.svg");
+          $('.logo').removeClass("logo-main-small");
+          $('.logo').addClass("logo-main");
         }
     });
   </script>
