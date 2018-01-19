@@ -410,7 +410,7 @@ a {
 }
 /*/game*/
 
-.cta-landing {
+.cta-main {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
@@ -425,10 +425,10 @@ a {
   -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-  height: 34px;
+  min-height: 34px;
   margin-bottom: 10px;
   position: relative;
-  width: 34px;
+  min-width: 34px;
 }
 
 .scroll-down::after {
@@ -459,8 +459,7 @@ a {
 }
 
 .triangle,
-.square,
-.circle {
+.square {
   margin: 42px auto 42px;
 }
 
@@ -476,14 +475,6 @@ a {
   background-color: #07a0c8;
   height: 37px;
   width: 37px;
-}
-
-.circle {
-  background-color: #07a0c8;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;  height: 40px;
-  width: 40px;
 }
 
 /*cta*/
@@ -1107,6 +1098,11 @@ textarea:focus {
   width: 136px;
 }
 
+.people-image img {
+  height: auto;
+  width: 100%;
+}
+
 .people-title {
   margin-bottom: 7px;
   text-align: center;
@@ -1363,7 +1359,7 @@ textarea:focus {
     margin-right: 0;
   }
 
-  .menu li::after {
+  /* .menu li::after {
     background-color: #070707;
     bottom: -7px;
     content: '';
@@ -1371,10 +1367,14 @@ textarea:focus {
     height: 2px;
     position: absolute;
     width: 100%;
-  }
+  } */
 
   .menuitem {
     font-size: 1.3em;
+  }
+
+  .menuitem:hover {
+    border-bottom: 2px solid #b9bbbe;
   }
 
   /*game900*/
@@ -1418,9 +1418,12 @@ textarea:focus {
     margin: 0 25px 180px;
   }
 
+  .uvp-title {
+    font-size: 7em;
+  }
+
   .triangle,
-  .square,
-  .circle {
+  .square {
     margin: 90px auto 90px;
   }
 
@@ -1435,21 +1438,8 @@ textarea:focus {
     width: 60px;
   }
 
-  .circle {
-    height: 64px;
-    width: 64px;
-  }
-
-  .uvp-title {
-    font-size: 10.7em;
-  }
-
   .uvp-text {
     font-size: 2.7em;
-  }
-
-  .main {
-    font-size: 3.7em;
   }
 
   /*cta section900*/
@@ -1572,7 +1562,7 @@ textarea:focus {
     margin-top: 50px;
   }
 
-  /*------B L O G900-------*/
+  /*------B L O G 900-------*/
 
   .blog {
     -webkit-flex-direction: row;
@@ -1698,7 +1688,7 @@ textarea:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-height: 610px) {
   /*-------H E A D E R / L A N D I N G / F O O T E R 1200-------*/
 
   /*header1200*/
@@ -1744,7 +1734,7 @@ textarea:focus {
   /*game1200*/
   .game {
     height: 400px;
-    margin: 25px auto 0;
+    margin: 0 auto;
     width: 620px;
   }
 
@@ -1764,18 +1754,24 @@ textarea:focus {
   }
   /*/game1200*/
 
-  .cta-landing {
+  .cta-main {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     position: relative;
+    width: 100%;
   }
 
   .cta-title {
-    bottom: 0;
-    left: -285px;
+    cursor: pointer;
+    margin-right: 100px;
     position: absolute;
+    right: 50%;
+    text-align: left;
+    top: -10px;
   }
 
   .scroll-down {
-    bottom: 35px;
+    bottom: 10px;
     left: 50%;
     margin-bottom: 0;
     margin-left: -31px;
@@ -1788,13 +1784,27 @@ textarea:focus {
     display: grid;
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
-    -ms-grid-rows: 400px 400px 400px 400px;
-    grid-template-rows: 400px 400px 400px 400px;
+    -ms-grid-rows: 450px 450px;
+    grid-template-rows: 450px 450px;
     margin-bottom: 250px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     text-align: inherit;
     width: 1120px;
+  }
+
+  .uvp::after {
+    background-color: #e6e6e6;
+    content: '';
+    display: block;
+    height: 1290px;
+    left: 50%;
+    margin-left: -9px;
+    position: absolute;
+    top: -30px;
+    width: 18px;
+    z-index: -10;
   }
 
   .uvp-item {
@@ -1804,112 +1814,47 @@ textarea:focus {
     position: relative;
   }
 
-  .uvp-item::after {
-    background-color: #e6e6e6;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 18px;
-    z-index: -10;
-  }
-
-  .who-we-are {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .who-we-are::after {
-    height: 727px;
-    left: 491px;
-    top: -291px;
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    transform: rotate(10deg);
-  }
-
   .uvp div:nth-child(1),
   .uvp div:nth-child(3) {
+    margin-right: 35px;
     text-align: right;
   }
 
+  .uvp div:nth-child(2) {
+    margin-left: 35px;
+  }
+
   .triangle,
-  .square,
-  .circle {
+  .square {
     position: absolute;
   }
 
   .triangle {
-    left: -300px;
     margin: -17px 0 0;
+    right: -200px;
     top: 50%;
   }
 
   .what-we-do {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .what-we-do::after {
-    height: 487px;
-    left: -15px;
-    top: 34px;
-    -webkit-transform: rotate(-29deg);
-    -moz-transform: rotate(-29deg);
-    -ms-transform: rotate(-29deg);
-    -o-transform: rotate(-29deg);
-    transform: rotate(-29deg);
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .square {
+    left: -300px;
     margin: -30px 0 0;
-    right: -300px;
     top: 50%;
   }
 
   .tools {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .tools::after {
-    height: 470px;
-    left: 549px;
-    top: 105px;
-    -webkit-transform: rotate(29deg);
-    -moz-transform: rotate(29deg);
-    -ms-transform: rotate(29deg);
-    -o-transform: rotate(29deg);
-    transform: rotate(29deg);
-  }
-
-  .circle {
-    left: -300px;
-    margin: -32px 0 0;
-    top: 50%;
-  }
-
-  .why-us {
     grid-column: 2;
-    grid-row: 4;
-  }
-
-  .why-us::after {
-    height: 487px;
-    left: -64px;
-    top: 98px;
-    -webkit-transform: rotate(-14deg);
-    -moz-transform: rotate(-14deg);
-    -ms-transform: rotate(-14deg);
-    -o-transform: rotate(-14deg);
-    transform: rotate(-14deg);
+    grid-row: 2;
   }
 
   /*footer1200*/
   .footer {
     margin: 190px auto 27px;
-    width: 1200px;
+    width: 1120px;
   }
 
   .top {
@@ -2034,7 +1979,7 @@ textarea:focus {
     right: 12px;
   }
 
-  /*-------B L O G1200-------*/
+  /*-------B L O G 1200-------*/
 
   .blogposts {
     margin-bottom: 0;
@@ -2069,7 +2014,7 @@ textarea:focus {
     margin-top: 12px;
   }
 
-  /*-------C O N T A C T1200-------*/
+  /*-------C O N T A C T 1200-------*/
 
   .contact-info::after,
   .location-info::after,
@@ -2097,7 +2042,7 @@ textarea:focus {
   }
 
   .location-title {
-    margin-top: -8px;
+    margin-top: -10px;
   }
 
   .about-title {
@@ -2114,13 +2059,147 @@ textarea:focus {
   }
 }
 
-@media (min-width: 1800px) {
+@media screen and (min-width: 1200px) and (min-height: 750px) {
+  .game {
+    height: 400px;
+    margin-top: 70px;
+    width: 620px;
+  }
+}
 
-  /*header1800*/
-  /*landing section1800*/
-  /*game1800*/
-  /*uvp section1800*/
-  /*cta1800*/
-  /*footer1800*/
+@media screen and (min-width: 1600px) and (min-height: 800px){
+  /*-------H E A D E R / L A N D I N G / F O O T E R 1600-------*/
 
+  /*landing-section1600*/
+
+  /*game1600*/
+  .game {
+    height: 430px;
+    margin-top: 70px;
+    width: 660px;
+  }
+  /* /game1600 */
+
+  /*uvp section1600*/
+  /*GRID*/
+  .uvp {
+    width: 1340px;
+  }
+
+  .cta-title {
+    top: -20px;
+  }
+
+  .uvp-title {
+    font-size: 9em;
+  }
+
+  /*footer1600*/
+  .footer {
+    width: 1340px;
+  }
+
+  /*-------G A L L E R Y 1600-------*/
+
+  .page-wrap {
+    width: 1340px;
+  }
+
+  .thumbnail {
+    height: 240px;
+    width: 320px;
+  }
+
+  .project-short-title::before {
+    top: 227px;
+  }
+
+  /*-------P R O J E C T 1600-------*/
+
+  .map {
+    height: 286px;
+    width: 286px;
+  }
+
+  .landscape {
+    max-height: 754px;
+    max-width: 1340px;
+  }
+
+  .plan {
+    max-height: 894px;
+    max-width: 1340px;
+  }
+
+  .quote {
+    max-width: 547px;
+  }
+
+  .quote-left {
+    margin-left: 133px;
+  }
+
+  /*-------B L O G 1600-------*/
+
+  .blogposts {
+    margin-left: 226px;
+    max-width: 660px;
+  }
+
+  .date-publish {
+    left: -226px;
+  }
+
+  .blog-image {
+    margin-left: -226px;
+  }
+
+  .author {
+    left: -226px;
+  }
+
+  .excerpt {
+    margin-top: 12px;
+  }
+
+  .sidebar {
+    max-width: 320px;
+  }
+
+  /*-------C O N T A C T 1600-------*/
+
+  .contact-info,
+  .contact-form,
+  .location-info,
+  .contact-map,
+  .about-info,
+  .mi-people {
+    max-width: 660px;
+  }
+
+  .contact-info::after,
+  .location-info::after,
+  .about-info::after {
+    background: url('../assets/arrow-b.svg');
+    width: 320px;
+  }
+
+  .contact-title {
+    margin-top: 47px;
+  }
+
+  .contact-details,
+  .location-details,
+  .about-details {
+    margin-left: 20px;
+  }
+
+  .mi-people li {
+    max-width: 207px;
+  }
+
+  .people-image {
+    height: 173px;
+    width: 173px;
+  }
 }
