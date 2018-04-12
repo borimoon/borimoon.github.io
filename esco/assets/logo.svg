@@ -1,0 +1,10 @@
+<svg id="icons" version="1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .st0{fill:none;stroke:#152730;stroke-width:2;stroke-miterlimit:10}.st1{fill:#152730}.st2{fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10}
+  </style>
+  <path class="st0" id="XMLID_314_" d="M22 9h7v15H3V9h7"/>
+  <path class="st1" id="XMLID_256_" d="M7 14h4v6H7z"/>
+  <path class="st0" id="XMLID_257_" d="M14 15h9"/>
+  <path class="st0" id="XMLID_258_" d="M14 19h11"/>
+  <path class="st1" id="XMLID_259_" d="M12 7h8v4h-8z"/>
+</svg>
