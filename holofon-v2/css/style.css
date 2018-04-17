@@ -410,6 +410,11 @@ strong {
   margin-bottom: 0;
 }
 
+.description ul li {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+
 
 /*-------P U R C H A S E-------*/
 
