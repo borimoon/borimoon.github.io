@@ -159,6 +159,10 @@ strong {
   width: 100vw;
 }
 
+.header-navigation li:first-child {
+  margin-top: 7em;
+}
+
 
 /*-------menutoggle-------*/
 
@@ -451,13 +455,23 @@ strong {
   background-size: cover;
 }
 
+.illustration {
+  margin-bottom: 1.7em;
+}
+
+.image img {
+  width: 100%;
+}
+
 .tech-image {
   border: 1px solid #E9E8E8;
   margin-top: 4em;
 }
 
-.tech-image img {
-  width: 100%;
+p.image-side {
+  color: grey;
+  font-size: 1.3rem;
+  margin-bottom: 2em;
 }
 
 
@@ -762,71 +776,6 @@ strong {
     font-size: 4.5em;
   }
 
-  /*-------menutoggle 900-------*/
-
-  .toggle {
-    display: none;
-  }
-
-  .header-navigation {
-    background-color: transparent;
-    display: -webkit-flex !important;
-    display: flex !important;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    height: auto;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    opacity: 1;
-    position: static;
-    width: auto;
-  }
-
-  .main-menu {
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 4em;
-    -webkit-justify-content: space-between;
-    text-align: left;
-  }
-
-  .main-menu li {
-    margin-right: 2em;
-  }
-
-  .main-menu li:last-child {
-    margin-right: 0;
-  }
-
-  .main-menu a {
-    font-size: 1.2rem;
-  }
-
-  .competition {
-    margin-left: 2em;
-  }
-
-  .competition::before {
-    background-color: black;
-    content: ' ';
-    display: block;
-    height: 20px;
-    left: -20px;
-    position: absolute;
-    top: 3px;
-    width: 1px;
-  }
-
-  .lang {
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    margin-top: 0;
-  }
-
-
   /*-------uvp 900-------*/
 
   .uvp {
@@ -945,15 +894,73 @@ strong {
     width: 192px;
   }
 
-  /*-------menutoggle 1200-------*/
-
   .primary-menu {
     height: 70px;
     margin: 0 4rem;
   }
 
+  /*-------menutoggle 1200-------*/
+
+  .toggle {
+    display: none;
+  }
+
+  .header-navigation {
+    background-color: transparent;
+    display: -webkit-flex !important;
+    display: flex !important;
+    height: auto;
+    position: static;
+    text-align: left;
+    width: auto;
+  }
+
+  .header-navigation li:first-child {
+    margin-top: 0;
+  }
+
   .main-menu {
-    margin-right: 9em;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    /* margin-right: 9em; */
+    text-align: left;
+  }
+
+  .main-menu li {
+    margin-right: 2em;
+  }
+
+  .main-menu li:last-child {
+    margin-right: 0;
+  }
+
+  .main-menu a {
+    font-size: 1.2rem;
+  }
+
+  .competition {
+    margin-left: 2em;
+  }
+
+  .competition::before {
+    background-color: black;
+    content: ' ';
+    display: block;
+    height: 20px;
+    left: -20px;
+    position: absolute;
+    top: 3px;
+    width: 1px;
+  }
+
+  .lang {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-top: 0;
   }
 
 

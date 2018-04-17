@@ -8,7 +8,7 @@ $(function() {
       menuVisible = false;
       return;
     }
-    $('#menu').css({'display':'flex'});
+    $('#menu').css({'display':'block'});
     $('#toggle').toggleClass('menuopen');
     menuVisible = true;
   });
