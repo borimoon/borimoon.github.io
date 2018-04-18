@@ -1,0 +1,222 @@
+/*----- BASIC STYLES -----*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #070707;
+}
+
+/*--- typography ---*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+p,
+li,
+a {
+  font-size: 1.7rem;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.heading {
+  margin-bottom: 1.2em;
+  padding: 1em 0 0;
+}
+
+.heading-1 {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 1.7em;
+}
+
+.text:only-child,
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.text a {
+  border-bottom: 1px solid #070707;
+}
+
+.side-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/*--- links ---*/
+a {
+  color: #070707;
+  text-decoration: none;
+}
+
+/*--- images ---*/
+
+/*--- LAYOUT STYLES ---*/
+/*--- header ---*/
+.site-identity {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.site-identity a {
+  cursor: pointer;
+  display: block;
+}
+
+.logo {
+  max-width: 450px;
+  width: 100%;
+}
+
+.uvp {
+  padding-top: 2em;
+}
+
+/*--- main content ---*/
+.content {
+  margin: 0 1.5rem 2em;
+  padding-top: 3rem;
+}
+
+.list {
+  list-style-position: outside;
+  list-style-type: square;
+  margin-left: 1.5em;
+}
+
+.logos ul {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.companies {
+  border-bottom: 4px solid #85ab6d;
+  display: inline-block;
+}
+
+.logos li {
+  padding: 1em;
+}
+
+/*--- footer ---*/
+.content.footer {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 1em 0;
+}
+
+.copyright {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/*-------------------*/
+/*------- 600 -------*/
+/*-------------------*/
+@media (min-width: 600px) {
+
+  /*----- BASIC STYLES 600-----*/
+
+  /*--- LAYOUT STYLES 600---*/
+  /*--- header 600 ---*/
+
+  /*--- main content 600 ---*/
+
+  /*--- footer 600 ---*/
+}
+
+/*-------------------*/
+/*------- 900 -------*/
+/*-------------------*/
+@media (min-width: 900px) {
+
+  /*----- BASIC STYLES 900-----*/
+
+  /*--- LAYOUT STYLES 900---*/
+  /*--- header 900 ---*/
+
+  /*--- main content 900 ---*/
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 870px;
+  }
+
+  .logos ul {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  /*--- footer 900 ---*/
+}
+
+/*-------------------*/
+/*------- 1200 -------*/
+/*-------------------*/
+@media (min-width: 1200px) {
+
+  /*----- BASIC STYLES 1200-----*/
+  .heading-1 {
+    font-size: 5.2rem;
+  }
+
+  .heading-2 {
+    font-size: 3.2rem;
+  }
+
+  .heading-3 {
+    font-size: 2.2rem;
+  }
+
+  /*--- LAYOUT STYLES 1200---*/
+  /*--- header 1200 ---*/
+
+  /*--- main content 1200 ---*/
+  .content {
+    margin-bottom: 5rem;
+    padding-top: 7rem;
+    width: 980px;
+  }
+
+  /*--- footer 1200 ---*/
+}
