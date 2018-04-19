@@ -111,6 +111,10 @@ a {
   z-index: 999;
 }
 
+.bgwhite {
+  background-color: #fff;
+}
+
 .site-identity a {
   cursor: pointer;
   display: block;

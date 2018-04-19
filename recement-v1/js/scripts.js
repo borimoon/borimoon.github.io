@@ -45,3 +45,13 @@ $(document).ready(function (){
         }, 700);
     });
 });
+
+// header white
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= $(window).height()) {
+       $('#header').addClass('bgwhite');
+    }
+    else {
+       $('#header').removeClass('bgwhite');
+    }
+});
