@@ -163,7 +163,7 @@ strong {
   width: 100vw;
 }
 
-.header-navigation li:first-child {
+.main-menu li:first-child {
   margin-top: 7em;
 }
 
@@ -304,7 +304,7 @@ strong {
   text-transform: uppercase;
 }
 
-.hu:first-child {
+.hu {
   border: 1px solid #979797;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -873,11 +873,16 @@ p.image-side {
     flex: 1 1;
     margin-bottom: 0;
     padding-left: 2.8rem;
+    padding-right: 1em;
   }
 
   .footer-menu > li:first-child {
     border-left: 0;
     padding-left: 0;
+  }
+
+  .footer-menu > li:last-child {
+    padding-right: 0;
   }
 
   .tenders-logo {
@@ -930,14 +935,12 @@ p.image-side {
     background-color: transparent;
     display: -webkit-flex !important;
     display: flex !important;
+    -webkit-flex-direction: row;
+    flex-direction: row;
     height: auto;
     position: static;
     text-align: left;
     width: auto;
-  }
-
-  .header-navigation li:first-child {
-    margin-top: 0;
   }
 
   .main-menu {
@@ -947,12 +950,16 @@ p.image-side {
     display: flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
-    /* margin-right: 9em; */
+    margin-right: 9em;
     text-align: left;
   }
 
   .main-menu li {
     margin-right: 2em;
+  }
+
+  .main-menu li:first-child {
+    margin-top: 0;
   }
 
   .main-menu li:last-child {
