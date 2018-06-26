@@ -15,14 +15,14 @@
     <meta name="twitter:title" content="" />
 
 <!-- Icons -->
-    <link rel="icon" type="image/png" href="#" sizes="16x16" />
-    <link rel="icon" type="image/png" href="#" sizes="32x32" />
-    <link rel="icon" type="image/png" href="#" sizes="96x96" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon-96.png" />
 
-    <link rel="apple-touch-icon" sizes="120x120" href="#" />
-    <link rel="apple-touch-icon" sizes="152x152" href="#" />
-    <link rel="apple-touch-icon" sizes="167x167" href="#" />
-    <link rel="apple-touch-icon" sizes="180x180" href="#" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icon-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icon-167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png" />
 
 <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700|Rozha+One&amp;subset=latin-ext" rel="stylesheet" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
 <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-smooth-scroll@1.0.11"></script>
   </head>
 
@@ -62,7 +62,7 @@
 
     <section id="uvp" class="uvp">
       <div class="uvp-text">
-        <h1 class="heading-1 heading-main">
+        <h1 class="heading-main heading-1">
           Minden  mozdulatban önmagunkra találunk
         </h1>
 
@@ -141,7 +141,7 @@
         </li>
       </ul>
 
-      <a class="submit class-submit" href="#contact" v-smooth-scroll>jelentkezem</a>
+      <a class="submit class-submit" href="mailto:harmoniejazztanc@gmail.com">jelentkezem</a>
 
       <div class="shape circle">
         <img src="assets/circle.svg" />
@@ -204,10 +204,13 @@
           </p>
 
           <h2 class="subheading heading-2">Itt találsz<span class="purple">:</span></h2>
-          <p>
+          <p class="address">
             <strong>Harmonie Tánc</strong><br>
             Budapest VII., Szövetség u. 25.
           </p>
+
+          <div id="map" class="map">
+          </div>
         </div>
       </div>
 
@@ -225,7 +228,7 @@
         </li>
 
         <!-- <li>
-          <a href="https://www.facebook.com/harmonietanc/" target="blank">
+          <a href="#" target="blank">
             <img src="assets/insta-icon.svg" alt="instagram"/>
           </a>
         </li> -->
@@ -243,6 +246,150 @@
     <script src="js/navigation.js"></script>
     <script src="js/cta.js"></script>
     <script src="js/classes.js"></script>
-    <!-- <script src="js/smooth-scroll.js"></script> -->
+
+    <script>
+      function initMap() {
+        var harmonie = {lat: 47.500807, lng: 19.073208};
+        var map = new google.maps.Map(
+          document.getElementById('map'), {
+            zoom: 17,
+            center: harmonie,
+            styles: [
+              {
+                  "featureType": "administrative",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "color": "#0c0b0b"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "color": "#f2f2f2"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "poi",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "saturation": -100
+                      },
+                      {
+                          "lightness": 45
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "color": "#090909"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.arterial",
+                  "elementType": "labels.icon",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "transit",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "color": "#d4e4eb"
+                      },
+                      {
+                          "visibility": "on"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "visibility": "on"
+                      },
+                      {
+                          "color": "#fef7f7"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "color": "#9b7f7f"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                      {
+                          "color": "#fef7f7"
+                      }
+                  ]
+              }
+            ]
+          });
+
+          var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            map: map,
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: '#f11f96',
+              fillOpacity: 1,
+              scale: 7,
+              strokeWeight: 0,
+              strokeColor: 'transparent',
+            }
+          });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVKBWC1P3pGjp4khTe0Q3cy-cEZbYZPw4&callback=initMap"
+    async defer></script>
   </body>
 </html>
